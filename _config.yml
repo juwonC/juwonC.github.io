@@ -359,10 +359,10 @@ plugins:
 #   admins:              <id>
 
 # Used on index and about sites
-#social:
+social:
   #name:                <firstname> <lastname>
-  #links:
-  #  github: <username>
+  links:
+    github: <https://github.com/juwonC>
 
 
 # Plugin Configs
