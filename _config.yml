@@ -88,7 +88,7 @@ remote_theme: hydecorp/hydejack@v9
 # ----------------------------------------------------------------------------------------
  
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/vertical-shot-beautiful-starry-sky.jpg
+accent_image:          /assets/img/space-galaxy-background.jpg
 accent_color:          rgb(79,177,186)
 
 # This is used for the `theme-color` meta tag,
@@ -362,7 +362,7 @@ plugins:
 social:
   #name:                <firstname> <lastname>
   links:
-    github: <https://github.com/juwonC>
+    github: https://github.com/juwonC
 
 
 # Plugin Configs
