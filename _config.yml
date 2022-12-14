@@ -39,6 +39,10 @@ keywords:              []
 # It also used by the `jekyll-seo-tag` plugin.
 logo:                  /assets/img/programmer.png
 
+# Favicon
+favicon: /favicon.ico
+apple_touch_icon: /assets/img/programmer.png
+
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   # Used by `jekyll-feed`:
