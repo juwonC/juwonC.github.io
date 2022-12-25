@@ -25,8 +25,7 @@ title:                 Slow and Steady
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Hydejack is a boutique Jekyll theme for hackers, nerds, and academics,
-  with a focus on personal sites that are meant to impress.
+  JuwonCha
 
 # A shorter description for the sidebar.
 tagline:               Juwon
@@ -54,9 +53,9 @@ author:
 # Add links to the sidebar.
 menu:
   - title:             ComputerScience
-    url:               /cs/
+    url:               "/cs/"
   - title:             UnrealEngine
-    url:               /unreal/
+    url:               "/unreal/"
   - title:             About
     url:               /about/
 
