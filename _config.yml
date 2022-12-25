@@ -53,9 +53,9 @@ author:
 # Add links to the sidebar.
 menu:
   - title:             ComputerScience
-    url:               "/cs/"
+    url:               /category-os/
   - title:             UnrealEngine
-    url:               "/unreal/"
+    url:               /category-unreal/
   - title:             About
     url:               /about/
 
