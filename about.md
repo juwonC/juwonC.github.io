@@ -1,6 +1,6 @@
 ---
 layout: about
-image: /assets/img/blog/hydejack-9.jpg
+image: /assets/img/profile.jpeg
 description: >
   JuwonCha
 hide_description: true
