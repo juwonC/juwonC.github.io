@@ -1,3 +1,3 @@
 # StudyLog
 
-공부했던 내용들을 간단하게 정리하기 위한 공간입니다.
+[https://juwonc.github.io/](https://juwonc.github.io/)
