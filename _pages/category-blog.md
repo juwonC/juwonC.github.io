@@ -1,7 +1,8 @@
 ---
 title: "Blog"
-layout: archive
-permalink: /Blog
+layout: category
+permalink: /categories/Blog
+author_profile: true
 ---
 
 {% assign posts = site.categories.blog %}
