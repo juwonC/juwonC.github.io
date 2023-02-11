@@ -18,14 +18,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "circuits" %}
-                        <li><a href="/categories/stl" class="circuits">디지털논리회로 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/circuits" class="circuits">디지털논리회로 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "os" %}
-                        <li><a href="/categories/stl" class="os">운영체제 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/os" class="os">운영체제 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
