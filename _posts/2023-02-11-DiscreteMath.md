@@ -3,9 +3,9 @@ title: "이산수학"
 excerpt: "이산수학 개요"
 
 categories:
-  - discrete
+  - Discrete
 tags:
-  - [이산수학, discrete, math]
+  - [이산수학, Discrete, Math]
 
 toc: true
 
