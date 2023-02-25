@@ -1,7 +1,7 @@
 ---
 title: "운영체제"
 layout: archive
-permalink: /categories/os
+permalink: categories/os
 author_profile: true
 sidebar_main: true
 ---
