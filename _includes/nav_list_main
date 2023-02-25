@@ -2,7 +2,7 @@
   <input id="ac-toc" name="accordion-toc" type="checkbox" />
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
   <ul class="nav__items" id="category_tag_menu">
-      
+    <li>
         <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
         <span class="nav__sub-title">CS</span>
             <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
