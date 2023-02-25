@@ -33,14 +33,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "c" %}
-                        <li><a href="/categories/c" class="">C (with C++) ({{category[1].size}})</a></li>
+                        <li><a href="/categories/c" class="">C 프로그래밍({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "cpp" %}
-                        <li><a href="/categories/cpp" class="">C++ ({{category[1].size}})</a></li>
+                        <li><a href="/categories/cpp" class="">C++ 프로그래밍({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
