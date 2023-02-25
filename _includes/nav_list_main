@@ -11,21 +11,21 @@
                 <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
                 {% for category in site.categories %}
                     {% if category[0] == "Discrete" %}
-                        <li><a href="/categories/discrete" class="dicrete">이산수학 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/discrete" class="">이산수학 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Circuits" %}
-                        <li><a href="/categories/circuits" class="circuits">디지털논리회로 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/circuits" class="">디지털논리회로 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Os" %}
-                        <li><a href="/categories/os" class="os">운영체제 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/os" class="">운영체제 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -33,14 +33,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "C" %}
-                        <li><a href="/categories/c" class="c">C 프로그래밍({{category[1].size}})</a></li>
+                        <li><a href="/categories/c" class="">C 프로그래밍({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Cpp" %}
-                        <li><a href="/categories/cpp" class="cpp">C++ 프로그래밍({{category[1].size}})</a></li>
+                        <li><a href="/categories/cpp" class="">C++ 프로그래밍({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
