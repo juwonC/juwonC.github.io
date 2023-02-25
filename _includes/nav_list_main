@@ -19,7 +19,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Circuits" %}
-                        <li><a href="/categories/circuits" class="">디지털논리회로 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/circuits" class="">디지털 논리회로 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -27,6 +27,13 @@
                 {% for category in site.categories %}
                     {% if category[0] == "Os" %}
                         <li><a href="/categories/os" class="">운영체제 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Db" %}
+                        <li><a href="/categories/db" class="">데이터베이스 시스템({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -63,8 +70,8 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Personal Interest" %}
-                        <li><a href="/categories/personal" class="">Blog({{category[1].size}})</a></li>
+                    {% if category[0] == "PersonalInterest" %}
+                        <li><a href="/categories/personal" class="">Personal Interest({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
