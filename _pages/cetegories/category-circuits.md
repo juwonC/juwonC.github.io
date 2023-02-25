@@ -1,7 +1,7 @@
 ---
 title: "디지털 논리회로"
 layout: archive
-permalink: /categories/circuits/
+permalink: /categories/circuits
 author_profile: true
 sidebar_main: true
 ---
