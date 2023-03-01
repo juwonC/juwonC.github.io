@@ -103,20 +103,20 @@ Hello World.
 
 ## 코드 블럭(Code Block)
 
-``` cpp
+<br>
 
-// ``` cpp
-// #include <iostream>
 
-// int main()
-// {
-//   std::cout << "Hello World!" << std::endl;
-// }
-// ```
+    ``` cpp
+      #include <iostream>
 
-```
+      int main()
+      {
+        std::cout << "Hello World!" << std::endl;
+      }
+    ```
+<br>
+
 결과
-
 <br>
 
  ``` cpp
@@ -127,5 +127,3 @@ Hello World.
     std::cout << "Hello World!" << std::endl;
   }
 ```
-
-<br>
