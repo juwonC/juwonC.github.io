@@ -1,6 +1,6 @@
 ---
 title: "마크다운 문법"
-excerpt: "마크다운 문법입니다."
+excerpt: "마크다운 문법"
 
 categories:
   - Blog
