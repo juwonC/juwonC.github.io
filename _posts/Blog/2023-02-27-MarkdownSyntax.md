@@ -1,5 +1,5 @@
 ---
-title: "마크다운 문법"
+title: "[Blog]마크다운 문법"
 excerpt: "마크다운 문법"
 
 categories:
