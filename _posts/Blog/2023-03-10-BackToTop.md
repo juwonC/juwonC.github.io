@@ -1,11 +1,11 @@
 ---
-title: "[Blog]마크다운 문법"
-excerpt: "마크다운 문법"
+title: "[Blog]맨 위로 올라가기 버튼 만들기"
+excerpt: "맨 위로 올라가기 버튼 만들기"
 
 categories:
   - Blog
 tags:
-  - [Blog, Github Pages]
+  - [Blog, Github Pages, Back to Top]
 
 toc: true
 toc_sticky: true
