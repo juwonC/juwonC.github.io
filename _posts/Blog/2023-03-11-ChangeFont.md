@@ -30,7 +30,7 @@ date: 2023-03-11
 <br><br>
 
 ### 📌폰트 임포트
-마음에 드는 폰트를 찾아 @impot로 시작하는 코드를 복사해서 assets/css/main.scss 파일 맨 아래 부분에 붙여넣습니다.
+마음에 드는 폰트를 찾아 @import로 시작하는 코드를 복사해서 assets/css/main.scss 파일 맨 아래 부분에 붙여넣습니다.
 
 ```css
 @import url('//cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css');
@@ -80,6 +80,26 @@ _sidebar.scss로 예를 들면 font-family에 따라 폰트가 결정되는 것�
     line-height: 1.5;
   }
 ```
+<br><br>
+
+### 📌폰트 이름을 알 수 없을 때
+아래 폰트 처럼 font-family 뒤에 있는 것이 폰트 이름입니다.
+
+<br>
+
+```css
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+```
+
+<br>
+
+하지만 종종 '이롭게 바탕체' 같이 이름을 알기 어려운 폰트들이 있습니다. 이런 경우 '다운로드 페이지로 이동' 버튼을 눌러 폰트를 만든 회사 홈페이지에 접속하여 폰트 적용 튜토리얼을 참고해서 폰트 이름을 알아낼 수 있습니다.
+
 <br>
 
 출처
