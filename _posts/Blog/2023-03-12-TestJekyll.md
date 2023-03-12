@@ -41,7 +41,7 @@ url   : "http://localhost:4000"
 아래와 같은 화면이 나오면 정상적으로 로컬 서버가 실행된 것입니다. 
 <br>
 
-![exec_jekyll_serve](/assets/images/exec_jekyll_serve.png)
+![exec_jekyll_serve](/assets/images/exec_jekyll_serve.png){: width="600" height="600"}
 
 <br>
 
