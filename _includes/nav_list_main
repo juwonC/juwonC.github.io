@@ -70,8 +70,8 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "MyInterest" %}
-                        <li><a href="/categories/interest" class="">Personal Interest({{category[1].size}})</a></li>
+                    {% if category[0] == "MyInterests" %}
+                        <li><a href="/categories/interest" class="">MyInterests({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
