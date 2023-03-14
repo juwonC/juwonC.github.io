@@ -3,7 +3,7 @@ title: "제피러스 G14 부품 교체"
 excerpt: "무선 랜카드 교체와 램 추가"
 
 categories:
-  - MyInterest
+  - MyInterests
 tags:
   - [ROG Zephyrus G14, 무선 랜카드, RAM]
 
