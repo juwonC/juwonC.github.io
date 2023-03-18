@@ -25,14 +25,14 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Os" %}
+                    {% if category[0] == "OS" %}
                         <li><a href="/categories/os" class="">운영체제({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Db" %}
+                    {% if category[0] == "DB" %}
                         <li><a href="/categories/db" class="">데이터베이스 시스템({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
@@ -55,8 +55,15 @@
         <span class="nav__sub-title">Unreal Engine</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Ue4" %}
-                        <li><a href="/categories/ue4" class="">UE4({{category[1].size}})</a></li>
+                    {% if category[0] == "2D_Shooting" %}
+                        <li><a href="/categories/2dShooting" class="">Sample 2D Shooting({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "TPS" %}
+                        <li><a href="/categories/tps" class="">Sample TPS({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
