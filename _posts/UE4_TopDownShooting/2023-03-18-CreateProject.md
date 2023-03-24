@@ -8,7 +8,7 @@ tags:
   - [UE4, 탑다운 2D 슈팅 게임]
 
 toc: true
-toc_stikcy: true
+toc_sticky: true
 
 date: 2023-03-18
 ---
