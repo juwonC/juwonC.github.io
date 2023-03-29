@@ -31,10 +31,10 @@
           background: white;
       }
 
-      background: lightgray;
+      background: gold;
       &:after {
           left: 0;
-          content: "";
+          content: "light_mode";
       }
   }
 
@@ -42,7 +42,7 @@
       background: #00adb5;
       &:after {
           left: 50%;
-          content: "";
+          content: "dark_mode";
       }
   }
 }
