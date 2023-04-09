@@ -52,6 +52,20 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Algorithm_Implementation" %}
+                        <li><a href="/categories/algorithm_implementation" class="">알고리즘 구현({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "DataStructure_Implementation" %}
+                        <li><a href="/categories/data_structure_implementation" class="">자료구조 구현({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
         <span class="nav__sub-title">Unreal Engine</span>
             <ul>
                 {% for category in site.categories %}
