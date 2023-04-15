@@ -5,7 +5,7 @@ excerpt: "마크다운 문법"
 categories:
   - Blog
 tags:
-  - [Blog, Github Pages, Markdown]
+  - [Github Pages, Markdown]
 
 toc: true
 toc_sticky: true

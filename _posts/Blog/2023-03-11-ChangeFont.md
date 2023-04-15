@@ -5,7 +5,7 @@ excerpt: "웹 폰트 적용하기"
 categories:
   - Blog
 tags:
-  - [Blog, Github Pages, Font]
+  - [Github Pages, Font]
 
 toc: true
 toc_sticky: true

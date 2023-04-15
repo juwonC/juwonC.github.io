@@ -5,7 +5,7 @@ excerpt: "맨 위로 올라가기 버튼 만들기"
 categories:
   - Blog
 tags:
-  - [Blog, Github Pages, Back to Top]
+  - [Github Pages, Back to Top]
 
 toc: true
 toc_sticky: true

@@ -5,7 +5,7 @@ excerpt: "로컬에서 깃헙 페이지 테스트하기"
 categories:
   - Blog
 tags:
-  - [Blog, Github Pages, Jekyll]
+  - [Github Pages, Jekyll]
 
 toc: true
 toc_sticky: true
