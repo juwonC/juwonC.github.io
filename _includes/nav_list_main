@@ -7,15 +7,15 @@
     <!--Total Posts-->
     <li>
         🗃️<span style="font-family:'Iropke Batang';
-                        font-size: x-small;
+                        font-size: small;
                         font-weight: normal;">
         Total Posts (</style>
         <span style="font-family:'Iropke Batang';
-                    font-size: x-small;
+                    font-size: small;
                     font-weight: normal;">
         {{sum}}</style>
         <span style="font-family:'Iropke Batang';
-                    font-size: x-small;
+                    font-size: small;
                     font-weight: normal;">
         )</style>
     </li>
