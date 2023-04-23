@@ -1,11 +1,11 @@
 ---
-title: "[C++]소수 구하기"
-excerpt: "소수 구하기"
+title: "[C++]원형 큐 구현"
+excerpt: "원형 큐 구현"
 
 categories:
-  - Algorithm_Implementation
+  - DataStructure_Implementation
 tags:
-  - [알고리즘, 구현, 소수]
+  - [자료구조, 구현, 원형 큐]
 
 toc: true
 toc_sticky: true
