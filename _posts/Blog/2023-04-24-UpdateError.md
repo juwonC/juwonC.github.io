@@ -5,7 +5,7 @@ excerpt: "포스팅 업데이트 안되는 오류"
 categories:
   - Blog
 tags:
-  - [Github Pages, Jekyll, Error]
+  - [Github Pages, Jekyll, Update Error]
 
 toc: true
 toc_sticky: true
@@ -27,7 +27,7 @@ date: 2023-04-24
 
 2. 게시글 파일의 제목이 YEAR-MONTH-DAY-title.md 형식으로 되어 있는지 확인합니다.
 
-3. cmd나 터미널에서 jekyll build --verbose 명령어로 스킵된 jekyll이 없나 확인합니다.
+3. cmd나 터미널에서 jekyll build --verbose 명령어로 스킵된 jekyll이 있는지 확인합니다.
 
 3. 게시글의 날짜가 미래라면 _config_yml에서 future : true로 세팅을 변경합니다.
 
