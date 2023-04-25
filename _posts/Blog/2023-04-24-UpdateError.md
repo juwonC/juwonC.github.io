@@ -22,7 +22,7 @@ date: 2023-04-24
 
 <br><br>
 
-### 👷‍♂️해결방법
+### 👷‍♂️업데이트 오류 해결 방법
 1. 게시글이 _post 폴더에 있는지 확인합니다.
 
 2. 게시글 파일의 제목이 YEAR-MONTH-DAY-title.md 형식으로 되어 있는지 확인합니다.
@@ -49,16 +49,49 @@ paginate_path: /page:num/
 timezone: Asia/Seoul
 ```
 
+<br><br>
+
+### 👷‍♂️tzinfo 오류 해결 방법
+윈도우 환경에서 위의 방법대로 타임존을 바꾸고 로컬 서버로 게시글을 확인하려고 bundle exec jekyll serve 명령어를 cmd에 입력했더니 tzinfo 종속성 오류가 발생했습니다. 문제를 해결하기 위해 tzinfo를 설치합니다.
+
+```console
+gem install tzinfo
+```
+
+문제가 해결되지 않고 tzinfo data를 찾을 수 없다고 나오면 tzinfo-data를 설치하고 로컬 서버가 작동하는지 확인합니다.
+
+```console
+gem install tzinfo-data
+```
+
 <br>
 
+위 방법으로 문제가 해결되지 않았다면 블로그 상위 디렉토리에 있는 Gemfile에 아래와 같은 내용을 추가합니다.
 
-<br>
+```ruby
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo'
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
+```
+
+위 내용을 추가했으면 cmd에서 bundle install 명령어로 gem을 다시 설치하고 로컬 서버를 확인합니다.
+
+<br><br>
 
 참고
 <br>
 
 [https://stackoverflow.com/questions/30625044/jekyll-post-not-generated](https://stackoverflow.com/questions/30625044/jekyll-post-not-generated)
+
 [https://devyuseon.github.io/github%20blog/githubblog-post-not-shown/](https://devyuseon.github.io/github%20blog/githubblog-post-not-shown/)
+
 [https://jekyllrb.com/docs/configuration/options/](https://jekyllrb.com/docs/configuration/options/)
+
+[https://luvery93.github.io/articles/2017-08/Jekyll-Build-error-tzinfo-dependency](https://luvery93.github.io/articles/2017-08/Jekyll-Build-error-tzinfo-dependency)
+
+[https://honsal.blogspot.com/2015/12/tzinfo.html](https://honsal.blogspot.com/2015/12/tzinfo.html)
+
+[https://stackoverflow.com/questions/37959237/gem-tzinfo-data-platforms-mingw-mswin-x64-mingw-command-line-error](https://stackoverflow.com/questions/37959237/gem-tzinfo-data-platforms-mingw-mswin-x64-mingw-command-line-error)
+
 
 <br><br>
