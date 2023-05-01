@@ -206,7 +206,6 @@ incremental: false
 # Markdown Processing
 kramdown:
   input: GFM
-  syntax_highlighter: rouge
   syntax_highlighter_opts:
     block:
       line_numbers: true
@@ -295,7 +294,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
+      show_date: true
       comments: true
       share: true
       related: true
