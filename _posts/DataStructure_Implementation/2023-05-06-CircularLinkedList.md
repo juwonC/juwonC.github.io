@@ -21,7 +21,7 @@ date: 2023-05-06
 
 원형 연결 리스트의 노드 생성은 단일 연결 리스트처럼 맨 뒤에 추가하는 방식으로만 구현했습니다. 하지만 노드 삽입은 단일 리스트의 삽입과 달리 아래 그림처럼 추가될 노드가 처음 노드를 가리키도록 한 다음 pHead가 추가될 노드를 가리키도록 하였습니다.
 
-![CircularQueue](/assets/images/Implementation/CircularLinkedList.png){: width="200" height="200"}
+![CircularQueue](/assets/images/Implementation/CircularLinkedList.png){: width="400" height="400"}
 <br>
 [https://www.geeksforgeeks.org/circular-linked-list/](https://www.geeksforgeeks.org/circular-linked-list/)
 
