@@ -76,17 +76,53 @@ n개의 꼭지점을 가지는 트리는 n-1 개의 변을 가진다는 성질�
 
 ## 📚이진 트리
 ### 📄이진 트리
-이진 트리는 공집합이거나 모든 노드가 최대 2개의 서브트리를 가지는 루트 트리입니다. 각 노드의 서브트리는 왼쪽 서브트리와 오른쪽 서브트리로 구분되고 각각 최대 하나씩만을 가집니다. 왼쪽 서브트리만 두 개를 가지거나 오른쪽 서브트리만 두개를 가지는 노드가 존재하지 않습니다. 왼쪽 서브트리의 루트는 왼쪽 자식이라고 하고, 오른쪽 서브트리의 루트는 오른쪽 자식이라고 합니다.
+이진 트리(Binary Tree)는 공집합이거나 모든 노드가 최대 2개의 서브트리를 가지는 루트 트리입니다. 쉽게 말해, 각각의 노드가 최대 두 개의 자식 노드를 가진다는 의미입니다. 각 노드의 서브트리는 왼쪽 서브트리와 오른쪽 서브트리로 구분되고 각각 최대 하나씩만을 가집니다. 왼쪽 서브트리만 두 개를 가지거나 오른쪽 서브트리만 두개를 가지는 노드가 존재하지 않습니다. 왼쪽 서브트리의 루트는 왼쪽 자식이라고 하고, 오른쪽 서브트리의 루트는 오른쪽 자식이라고 합니다.
+
+![BinaryTree](\assets\images\DiscreteMath\BinaryTree.png)
+<br>
+[https://en.wikipedia.org/wiki/Binary_tree](https://en.wikipedia.org/wiki/Binary_tree)
+
+높이가 k인 이진 트리가 최대 가질 수 있는 노드의 수는 아래와 같습니다.
+
+$$ \sum_{i=0}^{k}2^{i} = 2^{k + 1} - 1 $$
 
 <br><br>
 
 ### 📄완전 이진 트리
-완전 이진 트리는 높이가 k인 트리에서 레벨 0부터 k-1까지 모든 노드가 채워져 있고 레벨 k에서는 왼쪽 노드부터 차례로 채워진 이진 트리입니다.
+완전 이진 트리(Complete Binary Tree)는 높이가 k인 트리에서 레벨 0부터 k-1까지 모든 노드가 채워져 있고 레벨 k에서는 왼쪽 노드부터 차례로 채워진 이진 트리입니다.
+
+![CompleteBinaryTree](\assets\images\DiscreteMath\CompleteBinaryTree.png)
+<br>
+[https://en.wikipedia.org/wiki/Binary_tree](https://en.wikipedia.org/wiki/Binary_tree)
+
+완전 이진 트리는 같은 노드 수를 갖는 트리 중 최소 높이를 갖습니다. n개의 노드를 갖는 이진 트리의 최소 높이는 아래와 같습니다.
+
+$$ H_{min} = \lfloor \log_2 n \rfloor $$
+
+<br>
+
+* 경사 이진 트리(Skewed Binary Tree)
+<br>
+높이를 가장 크게 구성하여 이진 트리가 한쪽으로 경사진 경우입니다.
+
+![SkewedBinaryTree](\assets\images\DiscreteMath\SkewedBinaryTree.png)
 
 <br><br>
 
 ### 📄포화 이진 트리
-포화 이진 트리는 높이가 k인 트리에서 레벨 0부터 k까지 모든 노드가 채워진 이진트리입니다.
+포화 이진 트리(Full Binary Tree)는 높이가 k인 트리에서 레벨 0부터 k까지 모든 노드가 채워진 이진트리입니다.
+
+아래 그림은 완전 이진 트리가 아닌 포화 이진 트리입니다.
+
+![FullBinaryTree](\assets\images\DiscreteMath\FullBinaryTree.jpg)
+
+<br>
+
+아래는 완전 이진 트리이면서 포화 이진 트리입니다.
+
+![CompleteAndFull](\assets\images\DiscreteMath\CompleteAndFull.jpg)
+<br>
+[https://www.geeksforgeeks.org/difference-between-full-and-complete-binary-tree/](https://www.geeksforgeeks.org/difference-between-full-and-complete-binary-tree/)
 
 <br><br><br>
 
@@ -95,7 +131,9 @@ n개의 꼭지점을 가지는 트리는 n-1 개의 변을 가진다는 성질�
 1. 임의의 노드 N에 대해 N의 왼쪽 서브트리의 키값들은 N의 키값 k보다 작아야한다.
 2. 임의의 노드 N에 대해 R의 오른쪽 서브트리의 키값들은 N의 키값 k보다 커야 한다.
 
-이진 탐색 트리에서 루트 노드에서부터 자식 노드로 탐색해 가면서 주어진 키와 일치하는 노드를 찾아냅니다.
+키는 각 노드의 식별자로서 키값들은 서로 구별되어야 합니다. 특정 노드에 대한 탐색은 그 키값을 이진 탐색 트리에서 찾는 것을 의미합니다.
+
+키 검색 과정은 이진 탐색 트리에서 루트 노드에서부터 자식 노드로 탐색해 가면서 주어진 키와 일치하는 노드를 찾아냅니다.
 
 1. 탐색 노드를 루트 노드로 설정한다.
 2. 탐색 노드와 주어진 키를 비교한다.
@@ -109,6 +147,10 @@ n개의 꼭지점을 가지는 트리는 n-1 개의 변을 가진다는 성질�
 ## 📚트리의 활용
 ### 📄신장 트리
 그래프 G가 주어졌을 때 G의 모든 꼭지점을 연결하고 사이클이 존재하지 않는 G의 부분 그래프를 G의 신장 트리라고 합니다.
+
+아래 그림은 4개의 꼭지점을 가지는 그래프에 대한 서로 다른 신장 트리입니다.
+
+![SpanningTree](\assets\images\DiscreteMath\SpanningTree.png)
 
 <br>
 
