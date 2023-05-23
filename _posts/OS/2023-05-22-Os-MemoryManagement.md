@@ -5,7 +5,7 @@ excerpt: "메모리 관리"
 categories:
   - OS
 tags:
-  - [운영체제, 교착상태]
+  - [운영체제, 메모리 관리]
 
 toc: true
 toc_sticky: true
