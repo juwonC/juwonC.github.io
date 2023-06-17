@@ -1,10 +1,10 @@
 ---
 title: "[UE5]Unreal Engine Documentation"
 layout: archive
-permalink: categories/unrealDocument
+permalink: categories/unreal_document
 author_profile: true
 sidebar_main: true
 ---
 
-{% assign posts = site.categories.UnrealDocument %}
+{% assign posts = site.categories.Unreal_Document %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}

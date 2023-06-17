@@ -85,8 +85,8 @@
         <span class="nav__sub-title">Unreal Engine</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "UnrealDocument" %}
-                        <li><a href="/categories/unrealDocument" class="">Unreal Document({{category[1].size}})</a></li>
+                    {% if category[0] == "Unreal_Document" %}
+                        <li><a href="/categories/unreal_document" class="">Unreal Document({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
