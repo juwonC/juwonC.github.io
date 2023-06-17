@@ -34,15 +34,15 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Circuits" %}
-                        <li><a href="/categories/circuits" class="">디지털 논리회로({{category[1].size}})</a></li>
+                    {% if category[0] == "OS" %}
+                        <li><a href="/categories/os" class="">운영체제({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "OS" %}
-                        <li><a href="/categories/os" class="">운영체제({{category[1].size}})</a></li>
+                    {% if category[0] == "Circuits" %}
+                        <li><a href="/categories/circuits" class="">디지털 논리회로({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -83,6 +83,13 @@
                 {% endfor %}
             </ul>
         <span class="nav__sub-title">Unreal Engine</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "UnrealDocument" %}
+                        <li><a href="/categories/unrealDocument" class="">Unreal Document({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "2D_Shooting" %}
