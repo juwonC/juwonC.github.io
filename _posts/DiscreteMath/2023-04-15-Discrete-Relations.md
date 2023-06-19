@@ -3,7 +3,7 @@ title: "[DiscreteMath]관계"
 excerpt: "관계"
 
 categories:
-  - Discrete
+  - Discrete_Math
 tags:
   - [이산수학, 관계]
 

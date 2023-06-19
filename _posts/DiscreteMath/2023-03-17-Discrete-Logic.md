@@ -3,7 +3,7 @@ title: "[DiscreteMath]논리"
 excerpt: "논리"
 
 categories:
-  - Discrete
+  - Discrete_Math
 tags:
   - [이산수학, 논리, 명제, 논리연산, 술어논리, 추론]
 

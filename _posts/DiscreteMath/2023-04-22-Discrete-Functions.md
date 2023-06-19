@@ -3,7 +3,7 @@ title: "[DiscreteMath]함수"
 excerpt: "함수"
 
 categories:
-  - Discrete
+  - Discrete_Math
 tags:
   - [이산수학, 함수]
 

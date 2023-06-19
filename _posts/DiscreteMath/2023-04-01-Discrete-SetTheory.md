@@ -3,7 +3,7 @@ title: "[DiscreteMath]집합론"
 excerpt: "집합론"
 
 categories:
-  - Discrete
+  - Discrete_Math
 tags:
   - [이산수학, 집합]
 

@@ -3,7 +3,7 @@ title: "[DiscreteMath]이산수학의 개요"
 excerpt: "이산수학 개요"
 
 categories:
-  - Discrete
+  - Discrete_Math
 tags:
   - [이산수학]
 

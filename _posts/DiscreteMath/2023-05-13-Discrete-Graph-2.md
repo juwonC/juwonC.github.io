@@ -3,7 +3,7 @@ title: "[DiscreteMath]그래프(2)"
 excerpt: "그래프"
 
 categories:
-  - Discrete
+  - Discrete_Math
 tags:
   - [이산수학, 그래프]
 

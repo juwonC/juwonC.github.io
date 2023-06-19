@@ -3,7 +3,7 @@ title: "[DiscreteMath]부울대수"
 excerpt: "부울대수"
 
 categories:
-  - Discrete
+  - Discrete_Math
 tags:
   - [이산수학, 부울대수]
 

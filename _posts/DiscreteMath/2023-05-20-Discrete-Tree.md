@@ -3,7 +3,7 @@ title: "[DiscreteMath]트리"
 excerpt: "트리"
 
 categories:
-  - Discrete
+  - Discrete_Math
 tags:
   - [이산수학, 트리]
 

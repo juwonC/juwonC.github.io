@@ -3,7 +3,7 @@ title: "[DiscreteMath]행렬"
 excerpt: "행렬"
 
 categories:
-  - Discrete
+  - Discrete_Math
 tags:
   - [이산수학, 행렬]
 

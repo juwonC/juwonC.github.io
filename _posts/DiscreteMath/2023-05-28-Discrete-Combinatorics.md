@@ -3,7 +3,7 @@ title: "[DiscreteMath]조합이론"
 excerpt: "조합이론"
 
 categories:
-  - Discrete
+  - Discrete_Math
 tags:
   - [이산수학, 조합이론]
 

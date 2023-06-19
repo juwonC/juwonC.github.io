@@ -3,7 +3,7 @@ title: "[DiscreteMath]정수론"
 excerpt: "정수론"
 
 categories:
-  - Discrete
+  - Discrete_Math
 tags:
   - [이산수학, 정수론]
 

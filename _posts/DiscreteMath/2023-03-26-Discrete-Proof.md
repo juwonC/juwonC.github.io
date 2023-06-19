@@ -3,7 +3,7 @@ title: "[DiscreteMath]증명"
 excerpt: "증명"
 
 categories:
-  - Discrete
+  - Discrete_Math
 tags:
   - [이산수학, 증명]
 

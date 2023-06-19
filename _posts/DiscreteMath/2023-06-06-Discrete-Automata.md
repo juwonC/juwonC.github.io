@@ -3,7 +3,7 @@ title: "[DiscreteMath]오토마타 및 형식 언어"
 excerpt: "오토마타 및 형식 언어"
 
 categories:
-  - Discrete
+  - Discrete_Math
 tags:
   - [이산수학, 오토마타 이론, 형식 언어]
 
