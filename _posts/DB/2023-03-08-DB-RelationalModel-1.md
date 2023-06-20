@@ -20,7 +20,7 @@ date: 2023-03-08
 
 ### 📄릴레이션
 
-  ![릴레이션](/assets/images/img_mysql_table.png)
+  ![릴레이션](/assets/images/DB/img_mysql_table.png)
   <br><br>
   출처: [http://www.tcpschool.com/mysql/mysql_intro_relationalDB](http://www.tcpschool.com/mysql/mysql_intro_relationalDB/)
   <br><br>

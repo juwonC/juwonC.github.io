@@ -171,7 +171,7 @@ date: 2023-03-01
 <br>
 
 
-![양논리와 음논리](/assets/images/logicSystem.png)
+![양논리와 음논리](/assets/images/Circuits/logicSystem.png)
 <br>
 출처: [https://www.electroniclinic.com/logic-gates-in-digital-electronics-complete-guide/](https://www.electroniclinic.com/logic-gates-in-digital-electronics-complete-guide/)
 <br>

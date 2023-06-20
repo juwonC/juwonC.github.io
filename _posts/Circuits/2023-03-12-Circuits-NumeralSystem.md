@@ -59,8 +59,8 @@ date: 2023-03-12
 <br><br>
 　　정수부분 변환　　　　　　　　소수부분 변환
 <br>
-![decToBin](/assets/images/decToBin.png){: width="200" height="200"}　　　
-![decFractionToBin](/assets/images/decFractionToBin.png){: width="200" height="200"}
+![decToBin](/assets/images/Circuits/decToBin.png){: width="200" height="200"}　　　
+![decFractionToBin](/assets/images/Circuits/decFractionToBin.png){: width="200" height="200"}
 <br><br>
 123.125<sub>10</sub> = 11011.001<sub>2</sub>이 됩니다.
 <br><br>
@@ -75,7 +75,7 @@ date: 2023-03-12
 <br><br>
 2진수의 비트를 소수점을 중심으로 2개씩 묶으면 00, 01, 10, 11 조합을 얻을 수 있습니다. 이는 각각 한 자리의 4진수 0, 1, 2, 3에 대응됩니다. 8진수는 2진수를 3비트씩 묶으면 되고 16진수는 2진수를 4비트씩 묶어서 변환할 수 있습니다.
 <br>
-![binTohex](/assets/images/binaryTo.png){: width="600" height="600"}
+![binTohex](/assets/images/Circuits/binaryTo.png){: width="600" height="600"}
 <br>
 2진수 비트들을 n비트씩 묶을 때 부족한 비트 수만큼 0이 있다고 가정해야합니다.
 <br>
