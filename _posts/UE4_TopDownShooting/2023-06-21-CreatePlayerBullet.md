@@ -1,6 +1,6 @@
 ---
-title: "[UE4]총알 제작"
-excerpt: "총알 제작"
+title: "[UE4]플레이어 총알 제작"
+excerpt: "플레이어 총알 제작"
 
 categories:
   - 2D_Shooting
@@ -46,6 +46,7 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	class UStaticMeshComponent* meshComp;
+};
 ```
 
 <br>
@@ -101,6 +102,7 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	class UStaticMeshComponent* meshComp;
+};
 ```
 
 <br>
