@@ -132,3 +132,107 @@ void ABullet::Tick(float DeltaTime)
 ```
 
 <br><br>
+
+### ⚙️플레이어 총알 버튼 입력
+플레이어가 화살표 버튼을 누르면 움직이듯이 총알도 스페이스 바를 누르면 발사 될 수 있도록 설정해줍니다. Edit 탭의 프로젝트 세팅으로 들어가서 Engine-Input 설정으로 이동합니다. +버튼을 눌러 항목을 추가하고 'Fire'이라고 이름을 설정하고 키보드 Space Bar키를 등록합니다.
+
+<br><br>
+
+### ⚙️플레이어 총알 생성
+플레이어 클래스 헤더파일에 플레이어의 총구 위치를 설정하기 위해 UArraowComponent 포인터 변수를 추가합니다. 또한 총알 블루프린트를 생성하기 위해 해당 블루프린트 파일을 지정하기 위한 변수도 추가합니다. 월드에 배치하지 않은 원본 파일을 변수에 할당하기 위해 TSubClassOf<T>라는 자료형을 사용합니다.
+
+```cpp
+#pragma once
+
+#include "CoreMinimal.h"
+#include "GameFramework/Pawn.h"
+#include "ShootingPlayer.generated.h"
+
+UCLASS()
+class SHOOTINGSAMPLE_API AShootingPlayer : public APawn
+{
+	GENERATED_BODY()
+
+public:
+	// Sets default values for this pawn's properties
+	AShootingPlayer();
+
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
+public:	
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
+	// Called to bind functionality to input
+	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	void PlayerInvuln();
+	void RespawnPlayer();
+
+	UPROPERTY(EditAnywhere)
+	class UBoxComponent* boxComp;
+
+	UPROPERTY(EditAnywhere)
+	class UStaticMeshComponent* meshComp;
+
+	// 속력 변수
+	UPROPERTY(EditAnywhere)
+	float moveSpeed = 500;
+
+	// 총구 위치
+	UPROPERTY(EditAnywhere)
+	class UArrowComponent* firePosition;
+
+	// 총알 블루프린트
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<class ABullet> bulletFactory;
+
+private:
+	float h;
+	float v;
+
+	void MoveHorizontal(float value);
+	void MoveVertical(float value);
+};
+```
+
+<br>
+
+플레이어 클래스 소스파일로 이동해서 총구 위치인 UArrowComponent를 생성합니다.
+
+```cpp
+#include "ShootingPlayer.h"
+#include "Components/BoxComponent.h"
+#include "Components/StaticMeshComponent.h"
+#include "Components/ArrowComponent.h"
+#include "Bullet.h"
+#include "Kismet/GameplayStatics.h"
+#include "ShootingSampleGameModeBase.h"
+
+// Sets default values
+AShootingPlayer::AShootingPlayer()
+{
+	PrimaryActorTick.bCanEverTick = true;
+
+	boxComp = CreateDefaultSubobject<UBoxComponent>(TEXT("My Box Component"));
+
+	SetRootComponent(boxComp);
+
+	meshComp = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("My Static Mesh"));
+
+	meshComp->SetupAttachment(boxComp);
+
+	FVector boxSize = FVector(50.0f, 50.0f, 50.0f);
+	boxComp->SetBoxExtent(boxSize);
+
+	// 총구 위치 컴포넌트를 생성하고 박스 컴포넌트의 자식으로 설정
+	firePosition = CreateDefaultSubobject<UArrowComponent>(TEXT("Fire Position"));
+	firePosition->SetupAttachment(boxComp);
+}
+
+... 생략
+```
+
+<br><br>
