@@ -207,9 +207,6 @@ private:
 #include "Components/BoxComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "Components/ArrowComponent.h"
-#include "Bullet.h"
-#include "Kismet/GameplayStatics.h"
-#include "ShootingSampleGameModeBase.h"
 
 // Sets default values
 AShootingPlayer::AShootingPlayer()
@@ -233,6 +230,112 @@ AShootingPlayer::AShootingPlayer()
 }
 
 ... 생략
+```
+
+<br>
+
+총구 설정이 끝났으므로 ShootingPlayer 헤더 파일로 이동해서 스페이스 바 버튼을 누르면 총알이 발사되는 함수를 만들어줍니다. Action 입력 바인딩은 키에 대한 특정 값을 반환하지 않기 때문에 Axis 입력 바인딩과 달리 매개변수가 없는 함수를 만들어줍니다.
+
+```cpp
+#pragma once
+
+#include "CoreMinimal.h"
+#include "GameFramework/Pawn.h"
+#include "ShootingPlayer.generated.h"
+
+UCLASS()
+class SHOOTINGSAMPLE_API AShootingPlayer : public APawn
+{
+	... 생략
+
+private:
+	float h;
+	float v;
+
+	void MoveHorizontal(float value);
+	void MoveVertical(float value);
+
+	// 총알 발사 입력 처리 함수
+	void Fire();
+};
+```
+
+<br>
+
+ShootingPlayer 소스 파일에 Fire() 함수를 구현해줍니다.
+
+```cpp
+#include "ShootingPlayer.h"
+#include "Components/BoxComponent.h"
+#include "Components/StaticMeshComponent.h"
+#include "Components/ArrowComponent.h"
+#include "Bullet.h"
+
+... 생략
+
+void AShootingPlayer::MoveHorizontal(float value)
+{
+	// Assign input Axis values to h
+	h = value;
+}
+
+void AShootingPlayer::MoveVertical(float value)
+{
+	// Assign input Axis values to v
+	v = value;
+}
+
+void AShootingPlayer::Fire()
+{
+	// SpawnActor<생성할 액터 클래스>(생성할 파일 변수, 생성할 위치, 생성할 회전값)
+	ABullet* bullet = GetWorld()->SpawnActor<ABullet>(bulletFactory, firePosition->GetComponentLocation(),
+		firePosition->GetComponentRotation());
+
+	UGameplayStatics::PlaySound2D(GetWorld(), fireSound);
+}
+```
+
+<br>
+
+Fire() 함수를 구현했다면 Fire 액션 입력에 연결해줍니다.
+
+```cpp
+#include "ShootingPlayer.h"
+#include "Components/BoxComponent.h"
+#include "Components/StaticMeshComponent.h"
+#include "Components/ArrowComponent.h"
+#include "Bullet.h"
+
+void AShootingPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+{
+	Super::SetupPlayerInputComponent(PlayerInputComponent);
+
+	PlayerInputComponent->BindAxis("Horizontal", this, &AShootingPlayer::MoveHorizontal);
+	PlayerInputComponent->BindAxis("Vertical", this, &AShootingPlayer::MoveVertical);
+
+	// Action 바인딩 된 값을 함수에 연결
+	// BindAction(액션 이름, 입력 이벤트 타입, 연결할 함수가 있는 클래스, 연결할 함수 주소 값)
+	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AShootingPlayer::Fire);
+}
+
+void AShootingPlayer::MoveHorizontal(float value)
+{
+	// Assign input Axis values to h
+	h = value;
+}
+
+void AShootingPlayer::MoveVertical(float value)
+{
+	// Assign input Axis values to v
+	v = value;
+}
+
+void AShootingPlayer::Fire()
+{
+	// SpawnActor<생성할 액터 클래스>(생성할 파일 변수, 생성할 위치, 생성할 회전값)
+	ABullet* bullet = GetWorld()->SpawnActor<ABullet>(bulletFactory, firePosition->GetComponentLocation(),
+		firePosition->GetComponentRotation());
+}
 ```
 
 <br><br>
