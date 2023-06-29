@@ -5,7 +5,7 @@ excerpt: "디렉터리 구조"
 categories:
   - Unreal_Document
 tags:
-  - [UE5, 용어]
+  - [UE5, 디렉터리 구조]
 
 toc: true
 toc_sticky: true
