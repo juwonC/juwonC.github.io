@@ -10,7 +10,7 @@ tags:
 toc: true
 toc_sticky: true
 
-date: 2023-06-27
+date: 2023-06-29
 ---
 
 ## 🎮에셋 이름 규칙
