@@ -61,4 +61,23 @@ FString name;
 UClass* MyClass;
 ```
 
+<br>
+
+### ⚙️포팅 가능한 C++ 코드
+
+* bool: boolean 값(bool 크기 추정금지). BOOL은 컴파일되지 않습니다.
+* TCHAR: character(문자)(TCHAR 크기 추정금지)
+* uint8: unsigned byte(1byte)
+* int8: signed byte(1byte)
+* uint16: unsigned short(2byte)
+* int16: signed short(2byte)
+* uint32: unsigned int(4byte)
+* int32: signed int(4byte)
+* uint64: unsigned quad word(8byte)
+* int64: signed quad word(8byte)
+* float: single precision floating point(4byte)
+* double: double precision floating point(8byte)
+* PTRINT: 포인터를 가질 수 있는 integer(PTRINT 크기 추정 금지)
+
+
 <br><br>
