@@ -79,5 +79,46 @@ UClass* MyClass;
 * double: double precision floating point(8byte)
 * PTRINT: 포인터를 가질 수 있는 integer(PTRINT 크기 추정 금지)
 
+<br><br>
+
+### ⚙️코드 포맷
+
+* 중괄호
+
+에픽에서는 새 줄에 중괄호를 넣는 것을 권장합니다. 단일 문장 블록에도 항상 중괄호를 포함시켜줍니다.
+
+```cpp
+if(bIsDead)
+{
+  return;
+}
+```
+
+<br>
+
+* If-Else
+
+if-else 문의 각 실행 블록은 중괄호로 묶어야 합니다. 중괄호를 사용하지 않을 경우 다른 사용자가 if 블록에 다른 줄을 추가할 수 있는 실수가 생길 수 있기 때문에 if-else 문은 항상 중괄호로 묶어야 합니다.
+
+```cpp
+if (Number < 10)
+{
+  UE_LOG(LogCategory, Log, TEXT("Low"));
+}
+else if(10 < Number && Number < 50)
+{
+  UE_LOG(LogCategory, Log, TEXT("Medium"));
+}
+else
+{
+  UE_LOG(LogCategory, Log, TEXT("High"));
+}
+```
+
+<br>
+
+* 탭 및 들여쓰기
+  - 실행 블록별로 코드를 들여씁니다.
+  - 줄 시작 부분의 공백은 탭을 사용합니다. 탭 크기는 4자로 설정합니다.
 
 <br><br>
