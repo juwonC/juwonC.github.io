@@ -3,7 +3,7 @@ title: "[UE5]언리얼 엔진 용어"
 excerpt: "언리얼 엔진 용어"
 
 categories:
-  - Unreal_Document
+  - Unreal_Documents
 tags:
   - [UE5, 용어]
 
@@ -12,9 +12,6 @@ toc_sticky: true
 
 date: 2023-06-24
 ---
-
-**언리얼 엔진 5 공식 문서** <https://docs.unrealengine.com/5.1/ko/>
-{: .notice--info}
 
 ## 🎮언리얼 엔진 용어
 ### ⚙️프로젝트

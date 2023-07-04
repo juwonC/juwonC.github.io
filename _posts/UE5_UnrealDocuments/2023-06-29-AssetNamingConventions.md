@@ -3,7 +3,7 @@ title: "[UE5]에셋 이름 규칙"
 excerpt: "에셋 이름 규칙"
 
 categories:
-  - Unreal_Document
+  - Unreal_Documents
 tags:
   - [UE5, 에셋 이름 규칙]
 
@@ -12,9 +12,6 @@ toc_sticky: true
 
 date: 2023-06-29
 ---
-
-**언리얼 엔진 5 공식 문서** <https://docs.unrealengine.com/5.1/ko/>
-{: .notice--info}
 
 ## 🎮에셋 이름 규칙
 ### ⚙️에셋 명명 규칙

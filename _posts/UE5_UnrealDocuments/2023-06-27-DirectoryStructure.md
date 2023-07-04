@@ -3,7 +3,7 @@ title: "[UE5]디렉터리 구조"
 excerpt: "디렉터리 구조"
 
 categories:
-  - Unreal_Document
+  - Unreal_Documents
 tags:
   - [UE5, 디렉터리 구조]
 
@@ -12,9 +12,6 @@ toc_sticky: true
 
 date: 2023-06-27
 ---
-
-**언리얼 엔진 5 공식 문서** <https://docs.unrealengine.com/5.1/ko/>
-{: .notice--info}
 
 ## 🎮디렉터리 구조
 ### ⚙️루트 디렉터리

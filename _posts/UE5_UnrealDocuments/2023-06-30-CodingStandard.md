@@ -3,7 +3,7 @@ title: "[UE5]코딩 표준"
 excerpt: "코딩 표준"
 
 categories:
-  - Unreal_Document
+  - Unreal_Documents
 tags:
   - [UE5, 코딩 표준]
 
@@ -12,9 +12,6 @@ toc_sticky: true
 
 date: 2023-06-30
 ---
-
-**언리얼 엔진 5 공식 문서** <https://docs.unrealengine.com/5.1/ko/>
-{: .notice--info}
 
 ## 🎮코딩 표준
 ### ⚙️코딩 규칙이 중요한 이유
