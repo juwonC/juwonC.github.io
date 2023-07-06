@@ -92,6 +92,13 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "BullCow_Game" %}
+                        <li><a href="/categories/bullcow_game" class="">Bulls&Cows Game({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "2D_Shooting" %}
                         <li><a href="/categories/2dShooting" class="">Sample 2D Shooting({{category[1].size}})</a></li>
                     {% endif %}
