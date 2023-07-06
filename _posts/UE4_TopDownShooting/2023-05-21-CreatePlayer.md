@@ -1,6 +1,6 @@
 ---
 title: "[UE4]플레이어 제작"
-excerpt: "플레이어 제작"
+excerpt: "2D Shooting - 플레이어 제작"
 
 categories:
   - 2D_Shooting

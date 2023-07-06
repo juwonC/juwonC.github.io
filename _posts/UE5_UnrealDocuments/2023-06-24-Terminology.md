@@ -1,6 +1,6 @@
 ---
 title: "[UE5]언리얼 엔진 용어"
-excerpt: "언리얼 엔진 용어"
+excerpt: "Unreal Documents - 언리얼 엔진 용어"
 
 categories:
   - Unreal_Documents

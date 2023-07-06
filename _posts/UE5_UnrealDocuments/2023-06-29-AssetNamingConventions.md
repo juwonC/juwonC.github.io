@@ -1,6 +1,6 @@
 ---
 title: "[UE5]에셋 이름 규칙"
-excerpt: "에셋 이름 규칙"
+excerpt: "Unreal Documents - 에셋 이름 규칙"
 
 categories:
   - Unreal_Documents

@@ -1,6 +1,6 @@
 ---
 title: "[UE5]메모리 관리"
-excerpt: "메모리 관리"
+excerpt: "Unreal Documents - 메모리 관리"
 
 categories:
   - Unreal_Documents

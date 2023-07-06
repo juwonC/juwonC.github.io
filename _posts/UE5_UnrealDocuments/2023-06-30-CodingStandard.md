@@ -1,6 +1,6 @@
 ---
 title: "[UE5]코딩 표준"
-excerpt: "코딩 표준"
+excerpt: "Unreal Documents - 코딩 표준"
 
 categories:
   - Unreal_Documents

@@ -1,6 +1,6 @@
 ---
 title: "[UE5]디렉터리 구조"
-excerpt: "디렉터리 구조"
+excerpt: "Unreal Documents - 디렉터리 구조"
 
 categories:
   - Unreal_Documents
