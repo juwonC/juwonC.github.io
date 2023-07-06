@@ -1,5 +1,5 @@
 ---
-title: "[C++]원형 큐 구현"
+title: "[Cpp]원형 큐 구현"
 excerpt: "원형 큐 구현"
 
 categories:

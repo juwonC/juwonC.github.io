@@ -1,5 +1,5 @@
 ---
-title: "[C++]이중 연결 리스트 구현"
+title: "[Cpp]이중 연결 리스트 구현"
 excerpt: "이중 연결 리스트 구현"
 
 categories:

@@ -1,5 +1,5 @@
 ---
-title: "[C++]원형 연결 리스트 구현"
+title: "[Cpp]원형 연결 리스트 구현"
 excerpt: "원형 연결 리스트 구현"
 
 categories:
