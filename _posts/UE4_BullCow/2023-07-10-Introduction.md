@@ -1,6 +1,6 @@
 ---
-title: "[UE4]Bulls and Cows"
-excerpt: "Bulls&Cows - Intro"
+title: "[UE4]Bulls and Cows 개요"
+excerpt: "Bulls&Cows - 개요"
 
 categories:
   - BullCow_Game
@@ -13,7 +13,7 @@ toc_sticky: true
 date: 2023-07-10
 ---
 
-## 🎮개요
+## 🎮Bulls and Cows 개요
 ### ⚙️게임 소개
 Bulls and Cows는 두 명 이상의 플레이어가 플레이 하는 게임으로 한 명이 3~4 자리 숫자를 임의로 정하고 나머지 다른 사람이 그 숫자를 맞추는 게임입니다.(단어 맞추기도 가능합니다.) 영어 이름이라서 생소할 뿐이지 우리에게 익숙한 숫자야구 게임과 동일한 게임입니다.
 
@@ -23,7 +23,7 @@ Bulls and Cows는 두 명 이상의 플레이어가 플레이 하는 게임으�
 
 강의를 통해 제작한 게임은 단어 맞추기 게임으로 제작되었습니다.
 
-<br><br>
+<br>
 
 ### ⚙️학습 요소
 
@@ -35,5 +35,12 @@ Bulls and Cows는 두 명 이상의 플레이어가 플레이 하는 게임으�
 * 논리연산자를 사용하여 비밀 문자와 플레이어가 추측한 문자가 맞는지 확인하는 기능
 * 여러 개의 비밀 문자를 배열에 넣고 랜덤하게 뽑는 기능
 * struct 사용
+
+<br>
+
+### ⚙️추가 요소
+
+* 카메라 전환
+* 레벨 설정
 
 <br><br>
