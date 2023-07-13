@@ -17,7 +17,7 @@ date: 2023-07-12
 ### ⚙️터미널 액터
 게임 월드안에서 문자열을 입력하고 출력하는 기능은 강의에서 미리 만들어 놓은 기능이라 간단하게 분석을 해보려고 합니다.
 
-Terminal이라는 액터에 Static Mesh 컴포넌트와 Text Render 컴포넌트가 붙어 있는 것으로 보아 큐브 모양의 스태틱 메쉬 위에 텍스트 렌더를 띄어서 문자열을 나타냈습니다.
+Terminal이라는 액터에 Static Mesh 컴포넌트와 Text Render 컴포넌트가 붙어 있는 것으로 보아 큐브 모양의 스태틱 메쉬 위에 텍스트 렌더를 띄어서 문자열을 나타낸 것 같습니다.
 
 ![TerminalActor](\assets\images\BullCow\Terminal.png)
 
@@ -27,7 +27,7 @@ Terminal이라는 액터에 Static Mesh 컴포넌트와 Text Render 컴포넌트
 
 터미널 블루프린트 클래스에서 Event Graph를 살펴보겠습니다.
 
-Tab키를 누르면 터미널에 키보드 입력이 가능하고 다시 Tab키를 누르면 터미널이 비활성화 되는 기능이 만들어져 있습니다. 그리고 텍스트가 업데이트되면 텍스트 렌더에 텍스트가 세팅되는 것처럼 보입니다.
+Tab키를 누르면 터미널이 활성화 되어 키보드 입력이 가능하고 다시 Tab키를 누르면 터미널이 비활성화 되는 기능이 만들어져 있습니다. 그리고 텍스트가 업데이트되면 텍스트 렌더에 텍스트가 세팅되는 것처럼 보입니다.
 
 ![TerminalBlueprint](\assets\images\BullCow\TerminalBlueprint.png)
 
@@ -107,7 +107,7 @@ OnKeyDown() 함수(Enter와 BackSpace 키)가 바인딩되어 키보드로 부�
 
 * void PrintLine(const FString& Line);
 
-이 함수는 문자열을 출력하는 기능을 합니다. Buffer라는 배열에 문자열을 넣고 UpdateText() 함수를 호출합니다.
+이 함수는 문자열을 출력하는 기능을 합니다. 멤버변수인 Buffer 배열에 문자열을 넣고 UpdateText() 함수를 호출합니다.
 
 <br>
 
@@ -143,9 +143,9 @@ Enter, BackSpace 키 입력을 통해 문자열 입력과 지우기 기능을 �
 
 * void AcceptInputLine();
 
-Buffer에 InputLine 문자열과 프롬프트(constexpr TCHAR GPrompt[4] = TEXT("$> ");)를 넣습니다. InputLine를 인자로 하여 카트리지 클래스의 OnInput() 함수를 호출합니다.
+Buffer에 InputLine 문자열과 프롬프트(constexpr TCHAR GPrompt[4] = TEXT("$> ");)를 넣습니다. InputLine을 인자로 하여 카트리지 클래스의 OnInput() 함수를 호출합니다.
 
-이 게임은 카트리지 클래스가 있고 여러 게임들이 카트리지 클래스를 상속받는 형태로 제작되었습니다. 따라서 과거 콘솔 패키지를 교체하는 식의 형태로 여러 게임들을 클래스 별로 나눌 수 있게 만들었습니다.
+이 게임은 카트리지 클래스가 있고 여러 게임들이 카트리지 클래스를 상속받는 형태로 제작되었습니다. 그리고 터미널 액터에 카트리지 컴포넌트를 붙인 형태로 게임이 제작되었습니다. 따라서 과거 콘솔 패키지를 교체하는 식의 형태로 여러 게임들을 클래스 별로 나눌 수 있게 만들었습니다.
 
 <br>
 
@@ -157,12 +157,12 @@ InputLine의 뒷자리 부터 제거합니다.
 
 * FString GetScreenText() const;
 
-문자열 배열에 InputLine 문자열과 프롬프트(constexpr TCHAR GPrompt[4] = TEXT("$> ");)를 넣고 WrapLines와 Truncate 함수를 호출하여 자동 줄 바꿈을 수행합니다. 마지막으로 JoinWithNewline 함수를 호출하여 그 결과값을 반환합니다.
+문자열을 담는 배열에 InputLine 문자열과 프롬프트(constexpr TCHAR GPrompt[4] = TEXT("$> ");)를 넣고 WrapLines와 Truncate 함수를 호출하여 자동 줄 바꿈을 수행합니다. 마지막으로 JoinWithNewline 함수를 호출하여 그 결과값을 반환합니다.
 
 <br>
 
 * void UpdateText();
 
-GetScreenText()의 반환값을 매개변수로 받는 Broadcast()함수를 호출합니다. 델리게이트 기능입니다.
+GetScreenText()의 반환값을 인자로 받는 Broadcast()함수를 호출합니다. 델리게이트 기능입니다.
 
 <br><br>
