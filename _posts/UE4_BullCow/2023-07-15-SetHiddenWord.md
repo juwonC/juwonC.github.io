@@ -44,3 +44,33 @@ void UBullCowCartridge::OnInput(const FString& PlayerInput)
 ```
 
 <br><br>
+
+### ⚙️Isogram 체크
+Isogram은 한 단어에 같은 글자가 없는 글자를 의미합니다. 숨겨진 단어가 Isogram인지 체크하여 참 또는 거짓을 반환하는 함수를 만들어 봅시다.
+
+함수의 원형은 bool UBullCowCartridge::IsIsogram(const FString& Word) const 로 만들어 볼 수 있습니다. 함수에 들어오는 인자의 값이 변하지 않도록 매개변수 앞에 const 키워드를 사용하였고 이 멤버함수가 멤버변수들의 값을 변하게 하지 않기 위해 const 키워드를 사용해 const 멤버함수로 만들었습니다.
+
+문자열이 Isogram인지 체크하는 함수는 인자로 들어온 문자열의 첫 번째 문자 부터 끝 문자 앞(null문자 앞)까지 순회하면서 첫 번째 인덱스의 문자와 그 다음 인덱스의 문자들을 순차적으로 비교하여 만약 같은 문자가 있으면 거짓을 반환하고 같은 문자가 없다면 참을 반환합니다.
+
+예를 들어, 문자열 Word의 첫 번째 인덱스 번호 0인 문자 Word[0]을 Word[1]과 비교합니다. 그리고 Word[0]과 Word[2]를 비교합니다. 이런 식으로 순차적으로 첫 번째 문자와 나머지 문자들을 비교하는 방법입니다.
+
+```cpp
+bool UBullCowCartridge::IsIsogram(const FString& Word) const
+{
+    for (int32 Index = 0, Comparison = Index + 1; Comparison < Word.Len(); ++Comparison)
+    {
+        if (Word[Index] == Word[Comparison])
+        {
+            return false;
+        }
+    }
+
+    return true;
+}
+```
+
+<br><br>
+
+### ⚙️TArray에 숨겨진 문자 담아서 사용
+
+<br><br>
