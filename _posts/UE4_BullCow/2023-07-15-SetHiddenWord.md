@@ -189,3 +189,54 @@ TArray 끝에 원소를 삽입할 때 Emplace와 Add 함수를 사용할 수 있
 일반적으로 Emplace가 호출되는 곳에 인스턴스를 임시 생성 후 컨테이너에 복사 내지 이동하는 불필요한 절차를 피할 수 있기 때문에 Add 보다 좋습니다.
 
 <br><br>
+
+### ⚙️배열에 담긴 문자열 램덤하게 사용
+
+배열에 담긴 문자열을 무작위로 사용하려면 배열의 인덱스를 랜덤하게 설정할 수 있으면 됩니다. 배열의 인덱스를 랜덤하게 설정하기 위해 FMath::RandRange 함수를 사용합니다. FMath::RandRange(int32 Min, int32 Max) 함수는 최소값과 최대값 사이의 수를 무작위로 반환하는 함수입니다. 공식 문서를 보면 이 함수는 Math/UnrealMathUtility.h를 포함하여 사용할 수 있습니다.
+
+BullCowCartridge.h를 보면 CoreMinimal.h를 포함시켰는데 여기에 Math/UnrealMathUtility.h가 포함되어 있어 따로 헤더 파일을 포함시켜줄 필요가 없습니다. 이제 소스파일의 BeginPlay() 함수에 FMath::RandRange를 사용하여 배열에 담긴 문자열 램덤하게 사용해보겠습니다.
+
+```cpp
+// BullCowCartridge.h
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "Console/Cartridge.h"
+#include "BullCowCartridge.generated.h"
+
+UCLASS(ClassGroup=(Custom), meta=(BlueprintSpawnableComponent))
+class BULLCOWGAME_API UBullCowCartridge : public UCartridge
+{
+	GENERATED_BODY()
+
+public:
+	virtual void BeginPlay() override;
+	virtual void OnInput(const FString& PlayerInput) override;
+	bool IsIsogram(const FString& Word) const;
+  TArray<FString> Words;
+  TArray<FString> GetValidWords(const TArray<FString>& WordList) const;
+
+private:
+  FString HiddenWord;
+};
+```
+
+```cpp
+// BullCowCartridge.cpp
+
+#include "BullCowCartridge.h"
+
+void UBullCowCartridge::BeginPlay() // When the game starts
+{
+    Super::BeginPlay();
+
+    Words = {TEXT("trust"), TEXT("coffee"), TEXT("bee"), TEXT("responsible"), TEXT("jazz")};
+    
+    // 배열 첫 번째 인덱스 0이 최소값
+    // 배열 마지막 인덱스인 (배열 길이 - 1)이 최대값
+    HiddenWord = GetValidWord(Words)[FMath::RandRange(0, Words.Num() - 1)];
+}
+```
+
+<br><br>
