@@ -17,9 +17,11 @@ date: 2023-07-15
 ### ⚙️숨겨진 문자 설정
 BullCowCartridge의 OnInput 함수는 사용자가 문자를 입력하고 엔터 키를 누르면 호출되는 함수입니다. OnInput 함수의 내부 구현을 간단하게 알아보겠습니다.
 
-OnInput 함수는 Cartridge 클래스에서 순수 가상 함수로 선언되어 있습니다.(Cartridge 클래스는 BullCowCartridge 클래스의 부모 클래스입니다.) 따라서 Cartridge 클래스에서는 이 함수가 정의되어 있지 않고 자식 클래스들에서 정의될 수 있습니다.
+OnInput 함수는 Cartridge 클래스에서 순수 가상 함수로 선언되어 있습니다.(Cartridge 클래스는 BullCowCartridge 클래스의 부모 클래스입니다.) 따라서 이 함수는 Cartridge 클래스에  정의되어 있지 않고 자식 클래스들에서 정의될 수 있습니다.
 
-우리는 터미널이라는 곳에 문자를 입력하고 출력하는 게임을 만들고 있기 때문에 Terminal 클래스에서 OnInput 함수를 사용하는 것을 알 수 있습니다. Terminal 클래스에서 어떻게 OnInput 함수가 사용되는지 알아봅시다. Terminal 클래스의 ActivateTerminal 함수에서 키 바인딩에 의해 아무 키나 눌렀을 때 OnKeyDown 함수가 호출됩니다. 그 다음 OnKeyDown 함수에서 입력된 키가 Enter라면 AcceptInputLine 함수가 호출되고 Cartridge 클래스의 OnInput 함수가 AcceptInputLine 함수 안에서 호출됩니다.
+우리는 터미널이라는 곳에 문자를 입력하고 출력하는 게임을 만들고 있기 때문에 Terminal 클래스에서 OnInput 함수를 사용하는 것을 알 수 있습니다. Terminal 클래스에서 어떻게 OnInput 함수가 사용되는지 알아봅시다.
+
+Terminal 클래스의 ActivateTerminal 함수에서 키 바인딩에 의해 아무 키나 눌렀을 때 OnKeyDown 함수가 호출됩니다. 그 다음 OnKeyDown 함수에서 입력된 키가 Enter라면 AcceptInputLine 함수가 호출되고 Cartridge 클래스의 OnInput 함수가 AcceptInputLine 함수 안에서 호출됩니다.
 
 Cartridge 클래스의 OnInput 함수는 앞에서 말했듯이 순수 가상 함수이기 때문에 오버라이딩된 자식들의 OnInput 함수가 터미널 클래스에서 호출될 수 있습니다.
 
@@ -192,7 +194,7 @@ TArray 끝에 원소를 삽입할 때 Emplace와 Add 함수를 사용할 수 있
 
 ### ⚙️배열에 담긴 문자열 램덤하게 사용
 
-배열에 담긴 문자열을 무작위로 사용하려면 배열의 인덱스를 랜덤하게 설정할 수 있으면 됩니다. 배열의 인덱스를 랜덤하게 설정하기 위해 FMath::RandRange 함수를 사용합니다. FMath::RandRange(int32 Min, int32 Max) 함수는 최소값과 최대값 사이의 수를 무작위로 반환하는 함수입니다. 공식 문서를 보면 이 함수는 Math/UnrealMathUtility.h를 포함하여 사용할 수 있습니다.
+배열에 담긴 문자열을 무작위로 사용하려면 배열의 인덱스를 랜덤하게 설정할 수 있으면 됩니다. 배열의 인덱스를 랜덤하게 설정하기 위해 FMath::RandRange 함수를 사용하였습니다. FMath::RandRange(int32 Min, int32 Max) 함수는 최소값과 최대값 사이의 수를 무작위로 반환하는 함수입니다. 공식 문서를 보면 이 함수는 Math/UnrealMathUtility.h를 포함하여 사용할 수 있다고 나와있습니다.
 
 BullCowCartridge.h를 보면 CoreMinimal.h를 포함시켰는데 여기에 Math/UnrealMathUtility.h가 포함되어 있어 따로 헤더 파일을 포함시켜줄 필요가 없습니다. 이제 소스파일의 BeginPlay() 함수에 FMath::RandRange를 사용하여 배열에 담긴 문자열 램덤하게 사용해보겠습니다.
 
