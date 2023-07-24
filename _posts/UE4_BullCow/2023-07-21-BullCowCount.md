@@ -15,7 +15,11 @@ date: 2023-07-21
 
 ## 🎮Bull, Cow 카운트 세기
 ### ⚙️Bull, Cow 카운트 세기
-Bull과 Cow의 카운트를 세기 위해 저장할 정수형 변수는 멤버변수에 선언하지 않고 struct을 사용해보겠습니다. 언리얼 작명 규칙에 따라 struct의 이름은 FBullCowCount로 짓고 안에 정수형 변수들을 선언하고 초기화 해줍니다. 인자로 받은 문자열을 멤버변수 HiddenWord에 저장되어 있는 문자열과 비교하여 Bull과 Cow 카운트를 세는 함수를 만들어 줍니다. 헤더파일에 FBullCowCount GetBullCows(const FString& Guess) const; 와 같이 함수의 원형을 선언하고 소스파일에 함수를 정의해보겠습니다.
+Bull과 Cow의 카운트를 세기 위해 저장할 정수형 변수는 멤버변수에 선언하지 않고 struct을 사용해보겠습니다.
+
+언리얼 작명 규칙에 따라 struct의 이름은 FBullCowCount로 짓고 안에 정수형 변수들을 선언하고 초기화 해줍니다.
+
+인자로 받은 문자열을 멤버변수 HiddenWord에 저장되어 있는 문자열과 비교하여 Bull과 Cow 카운트를 세는 함수를 만들어 줍니다. 헤더파일에 FBullCowCount GetBullCows(const FString& Guess) const; 와 같이 함수의 원형을 선언하고 소스파일에 함수를 정의해보겠습니다.
 
 ```cpp
 // BullCowCartridge.h

@@ -28,6 +28,8 @@ Cartridge 클래스의 OnInput 함수는 앞에서 말했듯이 순수 가상 �
 Input 함수에 비밀 단어를 설정해보고 맞고 틀림에 따라 특정 메시지를 출력하는 기능을 구현하였습니다.
 
 ```cpp
+// BullCowCartridge.cpp
+
 void UBullCowCartridge::OnInput(const FString& PlayerInput)
 {
     ClearScreen();
