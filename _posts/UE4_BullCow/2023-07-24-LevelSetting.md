@@ -10,7 +10,7 @@ tags:
 toc: true
 toc_sticky: true
 
-date: 2023-07-25
+date: 2023-07-24
 ---
 
 ## 🎮레벨 설정
