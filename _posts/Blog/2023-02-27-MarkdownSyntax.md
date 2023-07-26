@@ -176,6 +176,75 @@ Hello World.
 
 <br><br><br>
 
+## 📝영상 삽입(Video)
+### 📌정적 링크 삽입
+스크린샷을 누르면 해당 영상 페이지로 가는 방법입니다.
+
+```markdown
+[![이미지 설명](스크린샷 이미지)](유튜브 링크)
+
+[![SampleVideo](http://img.youtube.com/vi/유튜브주소ID/0.jpg)](https://youtu.be/유튜브주소ID)
+```
+
+유뷰트 주소 ID는 v= 뒷 부분에 해당합니다.
+
+![YouTubeID](/assets/images/Blog/YouTubeID.png){: width="400" height="400"}
+
+<br>
+
+예제
+
+```markdown
+[![SampleVideo](http://img.youtube.com/vi/F5tbd_q-qPs/0.jpg)](https://youtu.be/F5tbd_q-qPs)
+```
+
+<br>
+
+결과
+
+[![SampleVideo](http://img.youtube.com/vi/F5tbd_q-qPs/0.jpg)](https://youtu.be/F5tbd_q-qPs)
+
+<br>
+
+### 📌영상 바로 삽입
+minimal mistakes 테마에서 마크다운으로 작성된 페이지에서 바로 영상이 재생되게 하는 방법입니다. minimal mistakes 테마는 비디오를 페이지에서 바로 재생할 수 있게 하는 Helper를 지원합니다. 다른 지킬 테마에서는 적용이 안 될 수 있습니다.
+
+
+💡minimal mistakes 테마 Helpers 문서
+<br>
+[https://mmistakes.github.io/minimal-mistakes/docs/helpers/](https://mmistakes.github.io/minimal-mistakes/docs/helpers/)
+{: .notice--info}
+
+```liquid
+{% raw %}
+{% include video id="유튜브주소ID" provider="youtube" %}
+{% endraw %} 
+```
+
+<br>
+
+예제
+
+```liquid
+{% raw %}
+{% include video id="F5tbd_q-qPs" provider="youtube" %}
+{% endraw %} 
+```
+
+<br>
+
+결과
+
+{% include video id="F5tbd_q-qPs" provider="youtube" %}
+
+<br>
+
+출처
+<br>
+[https://www.youtube.com/@unrealenginekr](https://www.youtube.com/@unrealenginekr)
+
+<br><br><br>
+
 ## 📝표(Table)
 ```markdown
 | 이름 | 번호 |
