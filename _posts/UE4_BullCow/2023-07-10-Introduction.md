@@ -43,4 +43,11 @@ Bulls and Cows는 두 명 이상의 플레이어가 플레이 하는 게임으�
 * 카메라 전환
 * 레벨 설정
 
+<br>
+
+### ⚙️플레이 영상
+대략적인 플레이 영상은 아래와 같습니다.
+
+{% include video id="mtFgYwasRgk" provider="youtube" %}
+
 <br><br>
