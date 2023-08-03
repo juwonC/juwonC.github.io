@@ -14,14 +14,14 @@ date: 2023-08-01
 ---
 
 ## 🎮충돌 설정
-### ⚙️Collision 채널 설정
+### ⚙️충돌 채널 설정
 언리얼 에디터에서 프로젝트 세팅을 선택해서 프로젝트 설정 창을 열고 Collision 탭을 선택합니다. Object Channels 탭에서 New Object Channels...를 선택하고 Player, Enemy, Bullet 채널을 기본 응답 값 Ignore로 설정하여 생성합니다.
 
 ![SetCollisionChannel](/assets/images/2DShooting/SetCollisionChannel.png)
 
 <br><br>
 
-### ⚙️Collision Response 설정
+### ⚙️충돌 기본 설정
 플레이어 클래스의 소스파일로 이동해서 생성자 함수 안에 충돌 설정 기능을 추가합니다. 
 
 우선 플레이어의 박스 컴포넌트의 오버랩 이벤트를 활성화합니다. 플레이러가 적과 겹쳐질 때(오버랩) 이벤트가 발생되려면 액터에 Generate Overlap Events 옵션이 켜져있어야 합니다.
@@ -85,9 +85,10 @@ AShootingPlayer::AShootingPlayer()
 
 하지만 원본 클래스의 코드를 수정하고 빌드했기 때문에 기존에 볼 수 없었던 Collision Presets 항목 오른쪽에 노란색 화살표 버튼이 생김으로써 블루프린트 설정 값을 원본 파일의 설정 값으로 복구할 수 있게 되었습니다. 노란색 버튼을 발견하였다면 버튼을 눌러 블루프린트 설정 값을 원본 설정 값과 같게 변경시켜줍니다.
 
-<br>
+<br><br>
 
-충돌 기본 설정이 끝났다면 각 콜리전 채널에 대한 개별 응답 값을 설정합니다.
+### ⚙️콜리전 채널에 대한 개별 응답 값 설정
+충돌 기본 설정이 끝났다면 각 콜리전 채널에 대한 개별 응답 값을 설정합니다. 우선 플레이어의 모든 충돌 채널에 대한 응답을 Ignore 상태로 변경합니다. 그 다음 적 채널(ECC_GameTraceChannel2)에 대해서만 오버랩 설정을 해줘서 적과 겹쳤을 때만 이벤트가 발생할 수 있게 해줍니다.
 
 ```cpp
 AShootingPlayer::AShootingPlayer()
@@ -121,5 +122,13 @@ AShootingPlayer::AShootingPlayer()
 	boxComp->SetCollisionResponseToChannel(ECC_GameTraceChannel2, ECR_Overlap);
 }
 ```
+
+<br>
+
+위 코드를 빌드해도 플레이어 블루프린트의 충돌 설정은 변경되지 않은 것을 확인할 수 있습니다. 이는 생성자 함수가 블루프린트 생성보다 먼저 이뤄지기 때문입니다.
+
+블루프린트가 생성될 때 상속받지 않은 부분이 추가되면 이를 새로 읽어 들이지만 충돌 응답 같은 이미 있는 설정은 부모 클래스에서 설정을 변경해도 블루프린트에서 다시 읽어오지 않습니다.
+
+따라서 이 문제를 해결하기 위해 기존의 블루프린트 파일을 지우고 다시 생성하면 됩니다. 파일을 지우고 다시 만들면 번거롭기 때문에 일반적으로 생성자 함수를 완성한 상태에서 블루프린트 파일을 만듭니다.
 
 <br><br>
