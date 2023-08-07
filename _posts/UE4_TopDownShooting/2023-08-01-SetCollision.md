@@ -136,6 +136,44 @@ AShootingPlayer::AShootingPlayer()
 ### ⚙️충돌 프리셋 설정
 충돌 채널 응답 설정을 개별로 매번 만드는 것은 번거로운 일입니다. 이런 번거러운 작업을 조금 줄이기 위해 콜리전 프리셋을 이용하면 편하게 충돌 응답을 설정할 수 있습니다.
 
-Project Settings 창을 열고 Collision 탭의 Preset 항목으로 이동합니다. New 버튼을 눌러 새로운 충돌 응답 프리셋을 설정합니다. 프리셋 이름을 'Enemy'로 하고 Player와 Bullet 채널에 대해 Overlap 응답을 하고 나머지는 Ignore 응답을 하도록 설정합니다.
+Project Settings 창을 열고 Collision 탭의 Preset 항목으로 이동합니다.
+
+![CollisionPreset](/assets/images/2DShooting/CollisionPreset.png){: width="600" height="600"}
+
+<br>
+
+New 버튼을 눌러 새로운 충돌 응답 프리셋을 설정합니다. 프리셋 이름을 'Enemy'로 하고 Player와 Bullet 채널에 대해 Overlap 응답을 하고 나머지는 Ignore 응답을 하도록 설정합니다.
+
+![EnemyProfile](/assets/images/2DShooting/EnemyProfile.png){: width="250" height="250"}
+
+<br>
+
+프리셋을 만들고 EnemyActor.cpp 에서 생성자에 충돌 프리셋을 설정하는 코드를 추가합니다. SetCollisionProfileName() 함수를 사용하는데 매개변수에 사용할 프리셋 이름을 넣어주면 됩니다.
+
+```cpp
+#include "EnemyActor.h"
+#include "Components/BoxComponent.h"
+#include "Components/StaticMeshComponent.h"
+#include "ShootingPlayer.h"
+#include "EngineUtils.h"
+
+AEnemyActor::AEnemyActor()
+{
+	PrimaryActorTick.bCanEverTick = true;
+
+	boxComp = CreateDefaultSubobject<UBoxComponent>(TEXT("Box Collider"));
+	SetRootComponent(boxComp);
+	boxComp->SetBoxExtent(FVector(50.0f, 50.0f, 50.0f));
+
+	meshComp = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Static Mesh"));
+	meshComp->SetupAttachment(boxComp);
+
+	enemyFirePosition = CreateDefaultSubobject<UArrowComponent>(TEXT("Fire Position"));
+	enemyFirePosition->SetupAttachment(boxComp);
+
+	// Collision Preset을 Enemy 프리셋을 변경
+	boxComp->SetCollisionProfileName(TEXT("Enemy"));
+}
+```
 
 <br><br>
