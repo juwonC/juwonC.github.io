@@ -81,7 +81,7 @@ void main()
   printf("정수 입력: ");
   scanf_s("%d", &a);
 
-  if(a > 0)
+  if(a >= 0)
   {
     if(a == 0)
     {
