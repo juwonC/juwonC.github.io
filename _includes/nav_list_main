@@ -34,6 +34,13 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "Linear_Algebra" %}
+                        <li><a href="/categories/linear_algebra" class="">선형대수({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "OS" %}
                         <li><a href="/categories/os" class="">운영체제({{category[1].size}})</a></li>
                     {% endif %}
@@ -82,6 +89,14 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+        <span class="nav__sub-title">RETRO GAME DEV</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Sound" %}
+                        <li><a href="/categories/sound" class="">Sound({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
         <span class="nav__sub-title">Unreal Engine</span>
             <ul>
                 {% for category in site.categories %}
@@ -99,15 +114,15 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "2D_Shooting" %}
-                        <li><a href="/categories/2dShooting" class="">Sample 2D Shooting({{category[1].size}})</a></li>
+                    {% if category[0] == "TopDown_Shooting" %}
+                        <li><a href="/categories/topdown_shooting" class="">2D Shooting({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "TPS" %}
-                        <li><a href="/categories/tps" class="">Sample TPS({{category[1].size}})</a></li>
+                        <li><a href="/categories/tps" class="">TPS({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
