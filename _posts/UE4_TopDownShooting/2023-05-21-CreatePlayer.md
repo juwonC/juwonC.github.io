@@ -3,7 +3,7 @@ title: "[UE4]플레이어 제작"
 excerpt: "2D Shooting - 플레이어 제작"
 
 categories:
-  - 2D_Shooting
+  - TopDown_Shooting
 tags:
   - [UE4, 탑다운 2D 슈팅 게임]
 

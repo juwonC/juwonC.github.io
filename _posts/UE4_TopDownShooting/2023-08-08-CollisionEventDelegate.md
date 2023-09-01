@@ -3,7 +3,7 @@ title: "[UE4]충돌 이벤트 구현"
 excerpt: "2D Shooting - 충돌 이벤트와 델리게이트"
 
 categories:
-  - 2D_Shooting
+  - TopDown_Shooting
 tags:
   - [UE4, 탑다운 2D 슈팅 게임, Delegate]
 

@@ -3,7 +3,7 @@ title: "[UE4]탑다운 2D 슈팅 게임 프로젝트 생성"
 excerpt: "2D Shooting - 탑다운 2D 슈팅 게임 프로젝트 생성"
 
 categories:
-  - 2D_Shooting
+  - TopDown_Shooting
 tags:
   - [UE4, 탑다운 2D 슈팅 게임]
 
