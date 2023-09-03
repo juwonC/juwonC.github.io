@@ -55,6 +55,13 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "CA" %}
+                        <li><a href="/categories/ca" class="">컴퓨터 구조({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "DB" %}
                         <li><a href="/categories/db" class="">데이터베이스 시스템({{category[1].size}})</a></li>
                     {% endif %}
