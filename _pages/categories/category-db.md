@@ -1,5 +1,5 @@
 ---
-title: "데이터베이스 시스템"
+title: "데이터베이스 시스템(Database System)"
 layout: archive
 permalink: categories/db
 author_profile: true

@@ -1,5 +1,5 @@
 ---
-title: "디지털 논리회로"
+title: "디지털 논리회로(Digital Logic Circuits)"
 layout: archive
 permalink: categories/circuits
 author_profile: true

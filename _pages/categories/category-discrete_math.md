@@ -1,5 +1,5 @@
 ---
-title: "이산수학"
+title: "이산수학(Discrete Mathematics)"
 layout: archive
 permalink: categories/discrete_math
 author_profile: true
