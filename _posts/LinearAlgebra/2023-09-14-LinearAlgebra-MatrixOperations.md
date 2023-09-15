@@ -156,4 +156,52 @@ $$ A - B =  \begin{pmatrix}
             \end{pmatrix}
 $$
 
+<br>
+
+M<sub>mn</sub>이 m × n행렬 전체의 집합이고 A, B, C가 M<sub>mn</sub>의 임의의 원소라고 하면 행렬의 합은 다음과 같은 성질이 성립합니다.
+
+1. A + B = B + A
+2. A + (B + C) = (A + B) + C
+3. A + O = A (행렬 O를 m × n크기의 영행렬이라고 합니다.)
+
+<br><br>
+
+## 📚행렬의 스칼라곱
+하나의 행렬에 하나의 수를 곱하는 연산을 행렬의 스칼라 곱이라고 합니다.
+
+A = (a<sub>ij</sub>)가 m × n행렬이고 c를 임의의 수라고 하면 행렬 A와 수 c의 스칼라곱 cA는 m × n행렬이고 다음과 같이 정의합니다.
+
+$$
+cA = (ca_{ij}) (1 <= i <= m, 1 <= j <= n)
+$$
+
+스칼라곱하여 얻어지는 행렬의 크기는 m × n행렬이고 (i, j) 행렬원소는 ca<sub>ij</sub>입니다.
+
+<br>
+
+📍다음 행렬의 스칼라곱 연산 결과를 구하시오.
+
+$$ 
+A =  \begin{pmatrix}
+      2 & 1 \\ 
+      1 & -1 \\
+      \end{pmatrix}
+$$
+
+* 2A = ?
+<br>
+$$ 2A = \begin{pmatrix}
+        4 & 2 \\ 
+        2 & -2 \\
+        \end{pmatrix}
+$$
+
+<br>
+
+M<sub>mn</sub>이 m × n행렬 전체의 집합이고 A, B가 M<sub>mn</sub>의 임의의 원소이며 c, d는 임의의 수라고 하면 행렬의 스칼라곱은 다음과 같은 성질이 성립합니다.
+1. (c + d)A = cA + dA
+2. c(A + B) = cA + cB
+3. c(dA) = (cd)A
+4. 1A = A
+
 <br><br>
