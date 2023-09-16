@@ -125,7 +125,7 @@ $$
 
 <br>
 
-📍행렬에 대한 연산 결과를 구하시오.
+📍두 행렬의 합에 대한 결과를 구하시오.
 <br><br>
 $$ A =  \begin{pmatrix}
           5 & 3 \\ 
@@ -179,7 +179,7 @@ $$
 
 <br>
 
-📍다음 행렬의 스칼라곱 연산 결과를 구하시오.
+📍다음 행렬의 스칼라곱의 결과를 구하시오.
 
 $$ 
 A =  \begin{pmatrix}
@@ -203,5 +203,98 @@ M<sub>mn</sub>이 m × n행렬 전체의 집합이고 A, B가 M<sub>mn</sub>의 
 2. c(A + B) = cA + cB
 3. c(dA) = (cd)A
 4. 1A = A
+
+<br><br>
+
+## 📚행렬의 곱
+행렬의 스칼라곱과 달리 행렬의 곱은 두 행의 곱을 의미합니다. 행렬의 곱은 크기가 같은 두 행렬에 대해 대응되는 성분끼리 곱하는 것이 아닙니다.
+
+두 행렬의 곱 AB를 정의하려면 A의 열의 개수와 B의 행의 개수가 같아야 합니다. A가 m × p 행렬이고 B가 p × n 행렬일 때, 행렬의 곱은 m × n 행렬이 됩니다.
+
+<br>
+
+📍행렬 곱의 결과를 구하시오.
+<br><br>
+$$ A =  \begin{pmatrix}
+          5 & 3 \\ 
+          1 & 1 \\
+          \end{pmatrix}
+\quad
+    B =  \begin{pmatrix}
+          0 & 1 \\ 
+          2 & 2 \\
+          \end{pmatrix}
+$$
+
+* AB = ?
+<br>
+$$ 
+AB = \begin{pmatrix}
+      (5 * 0) + (3 * 2) & (5 * 1) + (3 * 2) \\ 
+      (1 * 0) + (1 * 2) & (1 * 1) + (1 * 2) \\
+      \end{pmatrix}
+      =
+      \begin{pmatrix}
+      6 & 11 \\ 
+      2 & 3 \\
+      \end{pmatrix}
+$$
+
+<br>
+
+행렬의 합은 일반적인 수에서의 대수적 성질과 유사하지만 행렬의 곱은 그렇지 않습니다. A + B = B + A는 성립하지만 AB = BA는 언제나 성립하는 것은 아니라서 행렬의 곱은 교환법칙이 성립하지 않습니다.
+
+행렬의 곱은 또 다른 특이함이 있습니다. 영행렬이 아닌 두 행렬의 곱이 영행렬이 되는 경우가 있습니다. 또한 행렬 A, B, C가 있을 때, B ≠ C임에도 AB = AC가 되기도 합니다.
+
+<br><br>
+
+## 📚전치행렬
+주어진 행렬에 대해서 원소들의 행과 열을 서로 바꾸어 배치하는 것을 행렬의 전치라고 합니다.
+
+A = (a<sub>ij</sub>)를 m × n행렬이라 하면 A의 전치행렬은 m × n행렬 A<sup>T</sup> = ((a<sup>T</sup>)<sub>ij</sub>)로 다음과 같이 정의합니다.
+
+$$
+(a^{T})_{ij} = a_{ji} (1 <= i <= m, 1 <= j <= n)
+$$
+
+<br>
+
+📍행렬 A의 전치행렬을 구하시오.
+
+$$ 
+A = \begin{pmatrix}
+    2 & 1  \\ 
+    4 & 3  \\
+    \end{pmatrix}
+\quad
+B = \begin{pmatrix}
+    2 & 1 & 3  \\ 
+    \end{pmatrix}
+$$
+
+<br>
+
+$$
+A^{T} = \begin{pmatrix}
+        2 & 4  \\ 
+        1 & 3  \\
+        \end{pmatrix}
+\quad
+B^{T} = \begin{pmatrix}
+        2 \\ 
+        1 \\
+        3 \\
+        \end{pmatrix}
+$$
+
+<br>
+
+행렬의 전치는 다음과 같은 성질이 있습니다.
+1. (A<sup>T</sup>)<sup>T</sup> = A
+2. (A + B)<sup>T</sup> = A<sup>T</sup> + B<sup>T</sup>
+3. (AB)<sup>T</sup> = B<sup>T</sup>A<sup>T</sup>
+4. (cA)<sup>T</sup> = cA<sup>T</sup>
+
+A<sup>T</sup> = A인 행렬 A를 대칭행렬이라고 합니다. 행렬 A가 대칭행렬이 되려면 정방행렬이어야 하고 a<sub>ij</sub> = a<sub>ji</sub>를 만족해야 합니다. 따라서 대칭행렬 A는 주대각원소를 기준으로 대칭되는 위치의 행렬원소가 서로 같은 행렬입니다.
 
 <br><br>
