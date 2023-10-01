@@ -1,5 +1,5 @@
 ---
-title: "[OS]배열"
+title: "[DataStructure]배열"
 excerpt: "배열"
 
 categories:

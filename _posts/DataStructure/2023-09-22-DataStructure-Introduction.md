@@ -1,5 +1,5 @@
 ---
-title: "[OS]자료구조 소개"
+title: "[DataStructure]자료구조 소개"
 excerpt: "자료구조 소개"
 
 categories:
