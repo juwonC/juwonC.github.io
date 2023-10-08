@@ -251,10 +251,10 @@ $$
 ## 📚전치행렬
 주어진 행렬에 대해서 원소들의 행과 열을 서로 바꾸어 배치하는 것을 행렬의 전치라고 합니다.
 
-A = (a<sub>ij</sub>)를 m × n행렬이라 하면 A의 전치행렬은 m × n행렬 A<sup>T</sup> = ((a<sup>T</sup>)<sub>ij</sub>)로 다음과 같이 정의합니다.
+A = (a<sub>ij</sub>)를 m × n행렬이라 하면 A의 전치행렬은 n × m행렬 A<sup>T</sup> = a<sub>ij</sub><sup>T</sup>로 다음과 같이 정의합니다.
 
 $$
-(a^{T})_{ij} = a_{ji} (1 <= i <= m, 1 <= j <= n)
+(a_{ij})^{T} = a_{ji} (1 <= i <= m, 1 <= j <= n)
 $$
 
 <br>
