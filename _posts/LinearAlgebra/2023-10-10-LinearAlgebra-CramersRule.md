@@ -67,3 +67,16 @@ x = -1 \quad\quad y = -\frac{1}{2}
 $$
 
 <br><br>
+
+## 📚행렬식과 역행렬
+n차 정방행렬 A = (a<sub>ij</sub>)에 대해 (i, j) 원소 a<sub>ij</sub>가 A의 원소 a<sub>ij</sub>에 대한 여인수 A<sub>ij</sub>인 행렬을 A의 여인수행렬이라 하며 A의 여인수행렬의 전치행렬을 A의 수반행렬이라고 하고 adjA라 표시합니다.
+
+<br>
+
+n차 정방행렬 A = (a<sub>ij</sub>)에 대해 \|A\| ≠ 0일 때 A<sup>-1</sup>은 다음과 같습니다.
+
+$$
+A^{-1} = \frac{adjA}{|A|}
+$$
+
+<br><br>
