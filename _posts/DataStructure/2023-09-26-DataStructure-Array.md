@@ -33,9 +33,9 @@ date: 2023-09-26
 
 * 배열 객체: <i ∈ Index, e ∈ Element> 쌍들의 집합이다. Index는 순서를 나타내는 정수값, Element는 같은 자료형의 원소값
 
-* 연산: a ∈ Array; i ∈ Index; x, item ∈ Element; n ∈ Integer인 모든 a, item, n에 대해 다음과 같은 연산이 정의된다.(a는 0개 이상의 원소를 갖는 배열, item은 배열에 저장되는 원소, n은 배열의 최대 크기를 정의하는 정수값)
+* 연산: a ∈ Array; i ∈ Index; x, item ∈ Element; n ∈ Integer인 모든 a, item, n에 대해 다음과 같은 연산 정의.(a는 0개 이상의 원소를 갖는 배열, item은 배열에 저장되는 원소, n은 배열의 최대 크기를 정의하는 정수값)
 
-1. Array create(n) ::== 배열의 크기가 n인 빈 배열을 생성하고 공백 배열을 반환한다;
+1. Array create(n) ::== 배열의 크기가 n인 빈 배열을 생성하고 공백 배열을 반환;
 2. Element retrieve(a, i) ::== if(i ∈ Index)
 <br>
 　　then { 배열의 i 번째에 해당하는 원소 값 e를 반환; }
@@ -46,5 +46,52 @@ date: 2023-09-26
 　　then { 배열 a의 i 번째 위치에 원소값 e를 저장하고 배열 a를 반환; }
 <br>
 　　else { 인덱스 i가 배열 a의 크기를 벗어나면 에러 메시지 반환; }
+
+<br><br>
+
+## 📚배열의 연산 구현
+* 배열을 공백 배열로 생성하는 연산
+
+배열의 크기를 n으로 하고 n개의 원소를 0으로 초기화합니다.
+
+```c
+void Create(int size)
+{
+  int array[size];
+
+  for(int i = 0; i < size; ++i)
+  {
+    a[i] = 0;
+  }
+}
+```
+
+<br>
+
+* 배열의 원소값을 검색하는 연산
+
+검색 연산은 배열에서 i번째 인덱스에 저장된 원소값을 반환합니다.
+
+배열의 인덱스는 0부터 시작이므로 찾고자 하는 인덱스의 범위가 0 부터 배열 크기 보다 하나 작은 수라면 검색이 가능합니다. 따라서 배열에서 i번째 인덱스의 원소값을 반환합니다.
+
+만약 i가 위 유효 범위를 벗어났다면 Error 메시지를 출력하고 -1을 반환하고 검색을 종료합니다.
+
+```c
+#define ARRAY_SIZE 5
+
+int Retrieve(int* array, int i)
+{
+  if(i >= 0 && i < ARRAY_SIZE)
+  {
+    return array[i];
+  }
+  else
+  {
+    printf("Error\n");
+
+    return -1;
+  }
+}
+```
 
 <br><br>
