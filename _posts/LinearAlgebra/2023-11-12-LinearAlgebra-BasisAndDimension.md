@@ -41,6 +41,6 @@ c_n \\
 C
 $$
 
-<=> rank(A) = rank(A|C)
+<=> rank(A) = rank(A\|C)
 
 <br><br>
