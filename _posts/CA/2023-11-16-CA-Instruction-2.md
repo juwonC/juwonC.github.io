@@ -1,6 +1,6 @@
 ---
 title: "[CA]컴퓨터 명령어(2)"
-excerpt: "주소지정방식"
+excerpt: "주소지정방식, 명령어 종류"
 
 categories:
   - CA
