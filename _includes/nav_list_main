@@ -74,7 +74,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">C/C++</span>
+        <span class="nav__sub-title">C/C++/C#</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "C" %}
@@ -91,23 +91,22 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "Csharp" %}
+                        <li><a href="/categories/csharp" class="">C#({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "Algorithm_Implementation" %}
-                        <li><a href="/categories/algorithm_implementation" class="">알고리즘 구현({{category[1].size}})</a></li>
+                        <li><a href="/categories/algorithm_implementation" class="">Algorithm({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "DataStructure_Implementation" %}
-                        <li><a href="/categories/data_structure_implementation" class="">자료구조 구현({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-        <span class="nav__sub-title">RETRO GAME DEV</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Sound" %}
-                        <li><a href="/categories/sound" class="">Sound({{category[1].size}})</a></li>
+                        <li><a href="/categories/data_structure_implementation" class="">DataStructure({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -141,6 +140,13 @@
                 {% endfor %}
             </ul>
         <span class="nav__sub-title">ETC</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Reviews" %}
+                        <li><a href="/categories/reviews" class="">Reviews({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Blog" %}
