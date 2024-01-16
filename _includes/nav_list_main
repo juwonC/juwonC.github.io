@@ -161,6 +161,13 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "SnowBoarding" %}
+                        <li><a href="/categories/snowboarding" class="">SnowBoarding({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
         <span class="nav__sub-title">ETC</span>
             <ul>
                 {% for category in site.categories %}
