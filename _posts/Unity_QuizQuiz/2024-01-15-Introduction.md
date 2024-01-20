@@ -34,5 +34,6 @@ UI를 이용한 간단한 퀴즈 게임. 4개의 선택지 중 답을 하나 고
 
 ### ⚙️플레이 영상
 
+{% include video id="JBNTPbULagM" provider="youtube" %}
 
 <br><br>
