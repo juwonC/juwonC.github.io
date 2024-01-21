@@ -168,6 +168,13 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "QuizQuiz" %}
+                        <li><a href="/categories/quizquiz" class="">QuizQuiz({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
         <span class="nav__sub-title">ETC</span>
             <ul>
                 {% for category in site.categories %}
