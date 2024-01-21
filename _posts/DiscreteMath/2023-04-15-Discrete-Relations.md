@@ -87,7 +87,7 @@ $$
 
 $$ 모든 a \in A에 대해 (a, a) \in R $$
 
-<center><img src = "/assets/images/DiscreteMath/reflexive.jpeg" width="400" height="400"></center>
+<center><img src = "/assets/images/DiscreteMath/reflexive.png" width="400" height="400"></center>
 
 <br>
 
@@ -102,7 +102,7 @@ $$ 모든 a \in A에 대해 (a, a) \in R $$
 
 $$ 모든 a, b \in A에 대해 (a, b) \in R일 때 (b, a) \in R $$
 
-<center><img src = "/assets/images/DiscreteMath/symmetric.jpeg" width="400" height="400"></center>
+<center><img src = "/assets/images/DiscreteMath/symmetric.png" width="400" height="400"></center>
 
 <br>
 
@@ -130,11 +130,11 @@ $$ R^{-1} = \{(y,x)|(x,y) \in R\} $$
 <br><br>
 
 ### 📄합성관계
-집합 A에서 집합 B로의 관계 R이 있고, 집합 B에서 집합 C로의 관계 S가 있을 때, R을 적용하고 S를 적용하여 A에서 C로의 관계를 만들 수 있는데 이것을 **합성관계라**고 합니다.
+집합 A에서 집합 B로의 관계 R이 있고, 집합 B에서 집합 C로의 관계 S가 있을 때, R을 적용하고 S를 적용하여 A에서 C로의 관계를 만들 수 있는데 이것을 **합성관계**라고 합니다.
 
 $$ S \cdot R = \{(a,c) \in A \times C|a \in A, b \in B, c \in C, (a,b) \in R, (b,c) \in S\} $$
 
-　　　　　　　　<span style='background-color:#ffdce0'>❗️R을 적용하고 S를 적용하는 합성관계 기호가 $$ S \cdot R $$로 표기되는 것을 주의합니다.</span>
+<span style='background-color:#ffdce0'>❗️R을 적용하고 S를 적용하는 합성관계 기호가 $$ S \cdot R $$로 표기되는 것을 주의합니다.</span>
 
 <br><br>
 
