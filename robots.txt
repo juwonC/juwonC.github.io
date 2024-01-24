@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://juwonc.github.io/my_sitemap.xml
+Sitemap: https://juwonc.github.io/sitemap.xml
