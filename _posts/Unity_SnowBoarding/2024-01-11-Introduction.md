@@ -32,7 +32,14 @@ date: 2024-01-11
 
 <br>
 
+### ⚙️추가한 기능
+
+* 간단한 타이머
+
+<br>
+
 ### ⚙️플레이 영상
 
+{% include video id="j7sTjsLqhsE" provider="youtube" %}
 
 <br><br>
