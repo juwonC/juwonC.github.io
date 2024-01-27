@@ -1,7 +1,7 @@
 ---
-title: "C"
+title: "디지털 논리회로(Digital Logic Circuits)"
 layout: archive
-permalink: categories/c
+permalink: categories/circuits
 author_profile: true
 sidebar_main: true
 ---
@@ -11,5 +11,5 @@ sidebar_main: true
 　　(틀린 내용이나 오탈자는 댓글로 지적해주시면 수정하겠습니다.)
 {: .notice--info}
 
-{% assign posts = site.categories.C %}
+{% assign posts = site.categories.Circuits | reverse %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}

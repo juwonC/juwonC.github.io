@@ -11,5 +11,5 @@ sidebar_main: true
 [https://www.udemy.com/course/unitycourse/](https://www.udemy.com/course/unitycourse/)
 {: .notice--info}
 
-{% assign posts = site.categories.SnowBoarding %}
+{% assign posts = site.categories.SnowBoarding | reverse %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}

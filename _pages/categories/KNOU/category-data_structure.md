@@ -1,7 +1,7 @@
 ---
-title: "선형대수(Linear Algebra)"
+title: "자료구조(Data Structure)"
 layout: archive
-permalink: categories/linear_algebra
+permalink: categories/data_structure
 author_profile: true
 sidebar_main: true
 ---
@@ -11,5 +11,5 @@ sidebar_main: true
 　　(틀린 내용이나 오탈자는 댓글로 지적해주시면 수정하겠습니다.)
 {: .notice--info}
 
-{% assign posts = site.categories.Linear_Algebra %}
+{% assign posts = site.categories.DataStructure | reverse %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}

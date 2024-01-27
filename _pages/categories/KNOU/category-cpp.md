@@ -1,7 +1,7 @@
 ---
-title: "이산수학(Discrete Mathematics)"
+title: "C++"
 layout: archive
-permalink: categories/discrete_math
+permalink: categories/cpp
 author_profile: true
 sidebar_main: true
 ---
@@ -11,5 +11,5 @@ sidebar_main: true
 　　(틀린 내용이나 오탈자는 댓글로 지적해주시면 수정하겠습니다.)
 {: .notice--info}
 
-{% assign posts = site.categories.Discrete_Math %}
+{% assign posts = site.categories.Cpp | reverse %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}

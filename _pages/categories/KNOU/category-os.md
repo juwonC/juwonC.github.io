@@ -1,7 +1,7 @@
 ---
-title: "컴퓨터 구조(Computer Architecture)"
+title: "운영체제(Operating System)"
 layout: archive
-permalink: categories/ca
+permalink: categories/os
 author_profile: true
 sidebar_main: true
 ---
@@ -11,5 +11,5 @@ sidebar_main: true
 　　(틀린 내용이나 오탈자는 댓글로 지적해주시면 수정하겠습니다.)
 {: .notice--info}
 
-{% assign posts = site.categories.CA %}
+{% assign posts = site.categories.OS | reverse %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}

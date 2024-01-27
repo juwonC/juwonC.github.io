@@ -1,7 +1,7 @@
 ---
-title: "데이터베이스 시스템(Database System)"
+title: "이산수학(Discrete Mathematics)"
 layout: archive
-permalink: categories/db
+permalink: categories/discrete_math
 author_profile: true
 sidebar_main: true
 ---
@@ -11,5 +11,5 @@ sidebar_main: true
 　　(틀린 내용이나 오탈자는 댓글로 지적해주시면 수정하겠습니다.)
 {: .notice--info}
 
-{% assign posts = site.categories.DB %}
+{% assign posts = site.categories.Discrete_Math | reverse %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
