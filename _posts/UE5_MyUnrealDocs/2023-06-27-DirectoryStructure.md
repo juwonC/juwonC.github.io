@@ -1,9 +1,9 @@
 ---
 title: "[UE5]디렉터리 구조"
-excerpt: "Unreal Documents - 디렉터리 구조"
+excerpt: "MyUnrealDocs - 디렉터리 구조"
 
 categories:
-  - Unreal_Documents
+  - MyUnrealDocs
 tags:
   - [UE5, 디렉터리 구조]
 
@@ -29,7 +29,7 @@ date: 2023-06-27
 * Build: 엔진이나 게임을 빌드하는데 필요한 파일 포함
 * Config: 엔진을 제어하는 환경설정 파일 포함
 * Content: 엔진이나 게임에 대한 컨텐츠, 에셋 패키지와 맵 포함
-* DerivedDataCeche: 참조된 컨텐츠에 대해 로드시 생성된 파생 데이터 파일 포함(참조된 컨텐츠에 대해 캐시 파일이 없으면 로드 시간이 길어질 수 있습니다.)
+* DerivedDataCeche: 참조된 컨텐츠에 대해 로드시 생성된 파생 데이터 파일 포함(참조된 컨텐츠에 대해 캐시 파일이 없으면 로드 시간이 길어질 수 있다.)
 * Intermediate: 엔진이나 게임 빌드 도중 생성된 임시 파일 포함
 * Saved: 자동저장, 환경설정, 로그 파일 포함
 * Source: 엔진, 게임, 엔진 소스 코드, 툴, 게임플레이 클래스 등 모든 소스파일 포함

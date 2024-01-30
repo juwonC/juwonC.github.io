@@ -120,15 +120,15 @@
         <span class="nav__sub-title">Unreal Engine</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Unreal_Blueprints" %}
-                        <li><a href="/categories/unreal_blueprints" class="">Blueprints({{category[1].size}})</a></li>
+                    {% if category[0] == "MyUnrealDocs" %}
+                        <li><a href="/categories/myUnrealDocs" class="">My Unreal Docs({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Unreal_Documents" %}
-                        <li><a href="/categories/unreal_documents" class="">Unreal Documents({{category[1].size}})</a></li>
+                    {% if category[0] == "Unreal_Blueprints" %}
+                        <li><a href="/categories/unreal_blueprints" class="">Blueprints({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -146,14 +146,14 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+        <span class="nav__sub-title">Unity</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "TPS" %}
-                        <li><a href="/categories/tps" class="">TPS({{category[1].size}})</a></li>
+                    {% if category[0] == "MyUnityDocs" %}
+                        <li><a href="/categories/myUnityDocs" class="">My Unity Docs({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">Unity</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "TopDownDrive" %}
