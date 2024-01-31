@@ -15,11 +15,11 @@ date: 2023-07-24
 
 ## 🎮레벨 설정
 ### ⚙️레벨 설정
-비밀 단어를 맞추면 레벨이 올라가고 레벨에 따라 비밀 단어의 수가 늘어나는 방식으로 레벨업 시스템을 간단하게 만들어 보았습니다.
+비밀 단어를 맞추면 레벨이 올라가고 레벨에 따라 비밀 단어의 수가 늘어나는 방식으로 레벨업 시스템을 간단하게 만들어 보았다.
 
-현재 레벨과 최대 레벨을 저장하는 정수형 변수를 멤버변수로 선언하고 각각 1과 5로 초기화하였습니다. 그리고 Isogram을 담은 배열을 매개변수로 하는 레벨 설정 함수를 헤더파일에 선언합니다.
+현재 레벨과 최대 레벨을 저장하는 정수형 변수를 멤버변수로 선언하고 각각 1과 5로 초기화하였다. 그리고 Isogram을 담은 배열을 매개변수로 하는 레벨 설정 함수를 헤더파일에 선언한다.
 
-void LevelSetting(const TArray<FString>& IsogramArray); 와 같이 함수의 원형을 선언하였습니다.
+void LevelSetting(const TArray<FString>& IsogramArray); 와 같이 함수의 원형을 선언하였다.
 
 ```cpp
 // BullCowCartridge.h
@@ -58,9 +58,9 @@ private:
 
 <br>
 
-소스파일로 가서 LevelSetting 함수를 정의해줍니다. 비밀 단어를 담은 배열을 처음 부터 끝까지 순회하고 현재 레벨에 맞는 길이의 단어를 함수 내부에 임시로 만든 LevelWords 배열에 넣어 줍니다.
+소스파일로 가서 LevelSetting 함수를 정의해준다. 비밀 단어를 담은 배열을 처음 부터 끝까지 순회하고 현재 레벨에 맞는 길이의 단어를 함수 내부에 임시로 만든 LevelWords 배열에 넣어 준다.
 
-그리고 LevelWords에 담긴 단어들을 FMath::RnadRange 함수를 사용하여 멤버변수 HiddenWord에 저장합니다.
+그리고 LevelWords에 담긴 단어들을 FMath::RnadRange 함수를 사용하여 멤버변수 HiddenWord에 저장한다.
 
 ```cpp
 // BullCowCartridge.cpp
@@ -84,9 +84,9 @@ void UBullCowCartridge::LevelSetting(const TArray<FString>& IsogramArray)
 
 <br>
 
-레벨 설정 함수의 구현을 마무리하고 OnInput 함수에서 플레이어가 비밀 단어를 맞추면 레벨이 올라가고 LevelSetting 함수를 호출하여 레벨에 맞게 단어를 설정하도록 해주었습니다.
+레벨 설정 함수의 구현을 마무리하고 OnInput 함수에서 플레이어가 비밀 단어를 맞추면 레벨이 올라가고 LevelSetting 함수를 호출하여 레벨에 맞게 단어를 설정하도록 해주었다.
 
-다만, 현재 레벨이 계속 올라가는 것을 방지하기 위해 현재 레벨이 최대 레벨 이상이 될 때 현재 레벨에 최대 레벨을 대입하여 현재 레벨이 최대 레벨을 넘지 못하게 하였습니다.
+다만, 현재 레벨이 계속 올라가는 것을 방지하기 위해 현재 레벨이 최대 레벨 이상이 될 때 현재 레벨에 최대 레벨을 대입하여 현재 레벨이 최대 레벨을 넘지 못하게 하였다.
 
 ```cpp
 // BullCowCartridge.cpp
