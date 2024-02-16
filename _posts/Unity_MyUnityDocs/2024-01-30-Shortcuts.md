@@ -17,4 +17,6 @@ date: 2024-01-30
 
 * Ctrl + Shift + N: Hierarchy창에 빈 오브젝트 생성
 
+* Ctrl + P: 프로젝트 재생
+
 <br><br>
