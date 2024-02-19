@@ -69,6 +69,13 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "Algorithm" %}
+                        <li><a href="/categories/algorithm" class="">알고리듬({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "Circuits" %}
                         <li><a href="/categories/circuits" class="">디지털 논리회로({{category[1].size}})</a></li>
                     {% endif %}
