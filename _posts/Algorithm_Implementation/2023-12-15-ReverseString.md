@@ -69,7 +69,7 @@ int main()
     // 문자열의 첫 글자 주소
     char* head = str;
     // 문자열의 마지막 글자 주소(null 문자 제외)
-    char* tail = str + sizeof(str) - 1;
+    char* tail = str + sizeof(str) - 2;
 
     while (head < tail)
     {
